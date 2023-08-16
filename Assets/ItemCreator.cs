@@ -8,6 +8,7 @@ public class ItemCreator : MonoBehaviour
     private GameObject _itemParent;
 
     private GameObject _item;
+    private Material[] _originalMaterials;
     private GameObject _itemPreview;
     public GameObject item
     {
@@ -19,27 +20,9 @@ public class ItemCreator : MonoBehaviour
                 _itemPreview = Instantiate(value, Vector3.zero, Quaternion.identity);
                 _itemPreview.transform.SetParent(_itemParent.transform);
 
-                Renderer[] renderers = _itemPreview.GetComponentsInChildren<Renderer>();
-                foreach (Renderer renderer in renderers)
-                {
-                    Material[] materials = renderer.materials; // Получаем массив материалов из Renderer'а
-                    for (int i = 0; i < materials.Length; i++)
-                    {
-                        Material newMaterial = new Material(materials[i]);
-                        newMaterial.color = new Color(78 / 255f, 204 / 255f, 255 / 255f, 0.5f); // Устанавливаем цвет с полупрозрачным синим
-                        newMaterial.SetFloat("_Mode", 2); // Устанавливаем режим материала на Transparent
-                        newMaterial.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
-                        newMaterial.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
-                        newMaterial.SetInt("_ZWrite", 0);
-                        newMaterial.DisableKeyword("_ALPHATEST_ON");
-                        newMaterial.EnableKeyword("_ALPHABLEND_ON");
-                        newMaterial.DisableKeyword("_ALPHAPREMULTIPLY_ON");
-                        newMaterial.renderQueue = (int)UnityEngine.Rendering.RenderQueue.Transparent;
-
-                        materials[i] = newMaterial; // Заменяем материал в массиве новым материалом
-                    }
-                    renderer.materials = materials; // Присваиваем массив материалов обратно в Renderer
-                }
+                Renderer renderer = _itemPreview.GetComponent<MeshRenderer>();
+                _originalMaterials = renderer.materials;
+                _SetMaterialTransparentProperties(renderer);
             }
 
             _item = value;
@@ -75,15 +58,15 @@ public class ItemCreator : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            _CreateItem();
             _isCreating = false;
+            _CreateItem();
             return;
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            _DeleteItemPreview();
             _isCreating = false;
+            _DeleteItemPreview();
             return;
         }
 
@@ -110,6 +93,7 @@ public class ItemCreator : MonoBehaviour
         _item = _itemPreview;
         _itemPreview = null;
 
+        _RestoreOriginalMaterials();
 
         _SaveItemIntoGraph();
         _item = null;
@@ -123,6 +107,31 @@ public class ItemCreator : MonoBehaviour
         Destroy(_itemPreview);
         _item = null;
         _itemPreview = null;
+    }
+
+    private void _RestoreOriginalMaterials(){
+        _item.GetComponent<MeshRenderer>().materials =  _originalMaterials;
+    }
+
+    private void _SetMaterialTransparentProperties(Renderer renderer)
+    {
+        Material[] materials = renderer.materials;
+        for (int i = 0; i < materials.Length; i++)
+        {
+            Material newMaterial = new Material(materials[i]);
+            newMaterial.color = new Color(78 / 255f, 204 / 255f, 255 / 255f, 0.5f);
+            newMaterial.SetFloat("_Mode", 2);
+            newMaterial.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
+            newMaterial.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
+            newMaterial.SetInt("_ZWrite", 0);
+            newMaterial.DisableKeyword("_ALPHATEST_ON");
+            newMaterial.EnableKeyword("_ALPHABLEND_ON");
+            newMaterial.DisableKeyword("_ALPHAPREMULTIPLY_ON");
+            newMaterial.renderQueue = (int)UnityEngine.Rendering.RenderQueue.Transparent;
+
+            materials[i] = newMaterial;
+        }
+        renderer.materials = materials;
     }
 
 }
