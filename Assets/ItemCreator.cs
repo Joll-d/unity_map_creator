@@ -23,6 +23,13 @@ public class ItemCreator : MonoBehaviour
                 Renderer renderer = _itemPreview.GetComponent<MeshRenderer>();
                 _originalMaterials = renderer.materials;
                 _SetMaterialTransparentProperties(renderer);
+
+                Collider[] colliders = _itemPreview.GetComponentsInChildren<Collider>();
+    
+                foreach (Collider collider in colliders)
+                {
+                    collider.enabled = false;
+                }
             }
 
             _item = value;
@@ -31,6 +38,8 @@ public class ItemCreator : MonoBehaviour
 
     private bool _isCreating = false;
     public bool isCreating { get => _isCreating; set => _isCreating = value; }
+
+    private float _rotationSpeed = 90f;
 
     private static ItemCreator _instance;
     public static ItemCreator Instance => _instance;
@@ -73,14 +82,20 @@ public class ItemCreator : MonoBehaviour
         Vector3 itemPosition = RaycastInteraction.Instance.hitPoint;
 
         _MoveItemPreview(_itemPreview, itemPosition);
+        if (Input.GetKeyDown(KeyCode.Q)){
+            _RotateItemPreview(_itemPreview, _rotationSpeed);
+        }
+        if (Input.GetKeyDown(KeyCode.E)){
+            _RotateItemPreview(_itemPreview, -_rotationSpeed);
+        }
     }
 
     private void _MoveItemPreview(GameObject itemPreview, Vector3 itemPosition){
         if (MapInfo.Instance.IsLocationWithinBorders(itemPosition))
         {
 
-            float roundedX = Mathf.Round(itemPosition.x);
-            float roundedZ = Mathf.Round(itemPosition.z);
+            float roundedX = Mathf.Round(itemPosition.x)+0.5f;
+            float roundedZ = Mathf.Round(itemPosition.z)+0.5f;
             float roundedY = Mathf.Round(itemPosition.y);
 
             itemPosition = new Vector3(roundedX, roundedY, roundedZ);
@@ -89,11 +104,26 @@ public class ItemCreator : MonoBehaviour
         }
     }
 
+    private void _RotateItemPreview(GameObject itemPreview, float rotationAngle)
+    {
+        float itemRotationY = itemPreview.transform.rotation.eulerAngles.y;
+        rotationAngle += itemRotationY;
+        Quaternion rotation = Quaternion.Euler(0f, rotationAngle, 0f);
+        itemPreview.transform.rotation = rotation;
+    }
+
     private void _CreateItem(){
         _item = _itemPreview;
         _itemPreview = null;
 
         _RestoreOriginalMaterials();
+
+        Collider[] colliders = _item.GetComponentsInChildren<Collider>();
+
+        foreach (Collider collider in colliders)
+        {
+            collider.enabled = true;
+        }
 
         _SaveItemIntoGraph();
         _item = null;

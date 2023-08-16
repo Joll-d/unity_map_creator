@@ -32,10 +32,8 @@ public class RaycastInteraction : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
-        // Проводим рейкаст и проверяем столкновение с объектами
         if (Physics.Raycast(ray, out hit))
         {
-            // Получаем координаты точки столкновения
             _hitPoint = hit.point;
 
             return _hitPoint;

@@ -52,6 +52,10 @@ public class MapInfo : MonoBehaviour
         _instance = this;
     }
 
+    void Start() {
+        OnCreateMapButtonClicked();
+    }
+
     public void OnCreateMapButtonClicked()
     {
         // Парсинг значений из полей ввода и присвоение их переменным
