@@ -36,9 +36,9 @@ public class RaycastInteraction : MonoBehaviour
         if (Physics.Raycast(ray, out hit))
         {
             // Получаем координаты точки столкновения
-            Vector3 hitPoint = hit.point;
+            _hitPoint = hit.point;
 
-            return hitPoint;
+            return _hitPoint;
         }
 
         return Vector3.negativeInfinity;

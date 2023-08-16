@@ -353,8 +353,9 @@
 -analyzer:"E:/IDE/Unity Editor/2022.3.7f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"E:/IDE/Unity Editor/2022.3.7f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/CameraMovement.cs"
-"Assets/CreateMap.cs"
-"Assets/ObjectCreator.cs"
+"Assets/ItemCreator.cs"
+"Assets/ItemInfo.cs"
+"Assets/MapInfo.cs"
 "Assets/RaycastPlatformDetection.cs"
 -langversion:9.0
 
