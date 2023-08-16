@@ -94,8 +94,8 @@ public class ItemCreator : MonoBehaviour
         if (MapInfo.Instance.IsLocationWithinBorders(itemPosition))
         {
 
-            float roundedX = Mathf.Round(itemPosition.x)+0.5f;
-            float roundedZ = Mathf.Round(itemPosition.z)+0.5f;
+            float roundedX = Mathf.Round(itemPosition.x+0.5f)-0.5f;
+            float roundedZ = Mathf.Round(itemPosition.z+0.5f)-0.5f;
             float roundedY = Mathf.Round(itemPosition.y);
 
             itemPosition = new Vector3(roundedX, roundedY, roundedZ);
