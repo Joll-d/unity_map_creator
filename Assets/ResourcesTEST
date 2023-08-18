@@ -1,0 +1,67 @@
+{
+  "_vertex": {
+    "0_-0,5_0": {
+      "XSize": 20.0,
+      "YSize": 1.0,
+      "ZSize": 20.0,
+      "XPosition": 0.0,
+      "YPosition": -0.5,
+      "ZPosition": 0.0,
+      "XRotation": 0.0,
+      "YRotation": 0.0,
+      "ZRotation": 0.0,
+      "WRotation": 1.0,
+      "IndexLeft": [],
+      "IndexRight": [],
+      "IndexUp": [],
+      "IndexDown": [],
+      "IndexFront": [],
+      "IndexBottom": [],
+      "Index": "0_-0,5_0",
+      "PathPrefab": "Prefabs/PlaneNew",
+      "TerritoryInfo": 1,
+      "ShelterType": {
+        "Left": 0,
+        "Right": 0,
+        "Bottom": 0,
+        "Front": 0
+      }
+    }
+  },
+  "_decors": {},
+  "_planeToMovement": {},
+  "_enemy": [],
+  "width": 0,
+  "height": 0,
+  "Enemy": [],
+  "Decors": {},
+  "Vertex": {
+    "0_-0,5_0": {
+      "XSize": 20.0,
+      "YSize": 1.0,
+      "ZSize": 20.0,
+      "XPosition": 0.0,
+      "YPosition": -0.5,
+      "ZPosition": 0.0,
+      "XRotation": 0.0,
+      "YRotation": 0.0,
+      "ZRotation": 0.0,
+      "WRotation": 1.0,
+      "IndexLeft": [],
+      "IndexRight": [],
+      "IndexUp": [],
+      "IndexDown": [],
+      "IndexFront": [],
+      "IndexBottom": [],
+      "Index": "0_-0,5_0",
+      "PathPrefab": "Prefabs/PlaneNew",
+      "TerritoryInfo": 1,
+      "ShelterType": {
+        "Left": 0,
+        "Right": 0,
+        "Bottom": 0,
+        "Front": 0
+      }
+    }
+  }
+}
