@@ -19,11 +19,17 @@ public class ItemSizeInfo : MonoBehaviour
     public int sizeZ{ get => _sizeZ; set => _sizeZ = value; }
     
     [SerializeField]
-    private float offsetX = 0f;
+    private float _offsetX = 0f;
+    public float offsetX{ get => _offsetX; set => _offsetX = value; }
     [SerializeField]
-    private float offsetY = 0f;
+    private float _offsetY = 0f;
+    public float offsetY{ get => _offsetY; set => _offsetY = value; }
+
     [SerializeField]
-    private float offsetZ = 0f;
+    private float _offsetZ = 0f;
+    public float offsetZ{ get => _offsetZ; set => _offsetZ = value; }
+
+    
     [SerializeField]
     private bool[,,] boolArray;
 

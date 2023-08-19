@@ -133,11 +133,13 @@ public class MapWritingSystem : MonoBehaviour
         (float, float) borderX = (transformObject.position.x - itemSizeInfoObject.sizeX / 2,
             transformObject.position.x + itemSizeInfoObject.sizeX / 2);
 
-        (float, float) borderY = (transformObject.position.y,
-            transformObject.position.y + itemSizeInfoObject.sizeY);
+        (float, float) borderY = (transformObject.position.y - itemSizeInfoObject.offsetY,
+            transformObject.position.y + itemSizeInfoObject.sizeY - itemSizeInfoObject.offsetY);
 
         (float, float) borderZ = (transformObject.position.z - itemSizeInfoObject.sizeZ / 2,
             transformObject.position.z + itemSizeInfoObject.sizeZ / 2);
+        
+        Debug.Log(borderY);
 
         if (FindAllAirItemsInZone(borderX, borderY, borderZ, out List<string> items))
         {

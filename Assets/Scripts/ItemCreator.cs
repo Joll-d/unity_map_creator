@@ -10,6 +10,7 @@ public class ItemCreator : MonoBehaviour
     private GameObject _item;
     private Material[] _originalMaterials;
     private GameObject _itemPreview;
+    private ItemSizeInfo _itemSizeInfo;
     public GameObject item
     {
         get => _item;
@@ -33,6 +34,7 @@ public class ItemCreator : MonoBehaviour
             }
 
             _item = value;
+            _itemSizeInfo = _item.GetComponent<ItemSizeInfo>();
         }
     }
 
@@ -79,8 +81,9 @@ public class ItemCreator : MonoBehaviour
             return;
         }
 
+        
         Vector3 itemPosition = RaycastInteraction.Instance.hitPoint;
-
+        
         _MoveItemPreview(_itemPreview, itemPosition);
         if (Input.GetKeyDown(KeyCode.Q)){
             _RotateItemPreview(_itemPreview, _rotationSpeed);
@@ -94,11 +97,9 @@ public class ItemCreator : MonoBehaviour
         if (MapInfo.Instance.IsLocationWithinBorders(itemPosition))
         {
 
-            float roundedX = Mathf.Round(itemPosition.x+0.5f)-0.5f;
-            float roundedZ = Mathf.Round(itemPosition.z+0.5f)-0.5f;
-            float roundedY = Mathf.Round(itemPosition.y);
-
-            itemPosition = new Vector3(roundedX, roundedY, roundedZ);
+            itemPosition.x = Mathf.Round(itemPosition.x+0.5f)-0.5f;
+            itemPosition.z = Mathf.Round(itemPosition.z+0.5f)-0.5f;
+            itemPosition.y = Mathf.Round(itemPosition.y) + _itemSizeInfo.offsetY;
 
             itemPreview.transform.position = itemPosition;
         }
