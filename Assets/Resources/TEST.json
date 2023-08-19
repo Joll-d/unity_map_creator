@@ -234,17 +234,17 @@
         "0.5_0.5_7.5",
         "0.5_0.5_8.5",
         "0.5_0.5_9.5",
-        "1.5_0.5_-9.5",
+        "3.5_0_-6.5",
         "1.5_0.5_-8.5",
-        "1.5_0_-6.5",
-        "1.5_0_-5.5",
-        "1.5_0_-4.5",
-        "1.5_0_-3.5",
-        "1.5_0_-2.5",
-        "1.5_0_-1.5",
-        "1.5_0_-0.5",
-        "1.5_0_0.5",
-        "2.5_0_-2.5",
+        "5.5_0_-6.5",
+        "1.5_0.5_-6.5",
+        "1.5_0.5_-5.5",
+        "1.5_0.5_-4.5",
+        "1.5_0.5_-3.5",
+        "1.5_0.5_-2.5",
+        "1.5_0.5_-1.5",
+        "1.5_0.5_-0.5",
+        "1.5_0.5_0.5",
         "1.5_0.5_1.5",
         "1.5_0.5_2.5",
         "1.5_0.5_3.5",
@@ -261,7 +261,7 @@
         "2.5_0.5_-5.5",
         "2.5_0.5_-4.5",
         "2.5_0.5_-3.5",
-        "3.5_0_-2.5",
+        "2.5_0.5_-2.5",
         "2.5_0.5_-1.5",
         "2.5_0.5_-0.5",
         "2.5_0.5_0.5",
@@ -275,12 +275,12 @@
         "2.5_0.5_8.5",
         "2.5_0.5_9.5",
         "3.5_0.5_-9.5",
-        "3.5_0.5_-8.5",
         "3.5_0.5_-7.5",
-        "3.5_0.5_-6.5",
+        "1.5_0_-7.5",
         "3.5_0.5_-5.5",
         "3.5_0.5_-4.5",
         "3.5_0.5_-3.5",
+        "3.5_0.5_-2.5",
         "3.5_0.5_-1.5",
         "3.5_0.5_-0.5",
         "3.5_0.5_0.5",
@@ -316,7 +316,7 @@
         "5.5_0.5_-9.5",
         "5.5_0.5_-8.5",
         "5.5_0.5_-7.5",
-        "5.5_0.5_-6.5",
+        "3.5_0_-8.5",
         "5.5_0.5_-5.5",
         "5.5_0.5_-4.5",
         "5.5_0.5_-3.5",
@@ -413,7 +413,7 @@
         "9.5_0.5_7.5",
         "9.5_0.5_8.5",
         "9.5_0.5_9.5",
-        "1.5_0_-7.5"
+        "1.5_0_-9.5"
       ],
       "IndexDown": [],
       "IndexFront": [],
@@ -23210,7 +23210,7 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "1.5_0.5_-9.5"
+        "1.5_0_-9.5"
       ],
       "IndexBottom": [
         "-0.5_0.5_-9.5"
@@ -23327,7 +23327,7 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "1.5_0_-6.5"
+        "1.5_0.5_-6.5"
       ],
       "IndexBottom": [
         "-0.5_0.5_-6.5"
@@ -23366,7 +23366,7 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "1.5_0_-5.5"
+        "1.5_0.5_-5.5"
       ],
       "IndexBottom": [
         "-0.5_0.5_-5.5"
@@ -23405,7 +23405,7 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "1.5_0_-4.5"
+        "1.5_0.5_-4.5"
       ],
       "IndexBottom": [
         "-0.5_0.5_-4.5"
@@ -23444,7 +23444,7 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "1.5_0_-3.5"
+        "1.5_0.5_-3.5"
       ],
       "IndexBottom": [
         "-0.5_0.5_-3.5"
@@ -23483,7 +23483,7 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "1.5_0_-2.5"
+        "1.5_0.5_-2.5"
       ],
       "IndexBottom": [
         "-0.5_0.5_-2.5"
@@ -23522,7 +23522,7 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "1.5_0_-1.5"
+        "1.5_0.5_-1.5"
       ],
       "IndexBottom": [
         "-0.5_0.5_-1.5"
@@ -23561,7 +23561,7 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "1.5_0_-0.5"
+        "1.5_0.5_-0.5"
       ],
       "IndexBottom": [
         "-0.5_0.5_-0.5"
@@ -23600,7 +23600,7 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "1.5_0_0.5"
+        "1.5_0.5_0.5"
       ],
       "IndexBottom": [
         "-0.5_0.5_0.5"
@@ -25476,12 +25476,12 @@
         "Front": 0
       }
     },
-    "1.5_0.5_-9.5": {
-      "XSize": 0.5,
-      "YSize": 0.5,
-      "ZSize": 0.5,
+    "1.5_0_-9.5": {
+      "XSize": 50.0,
+      "YSize": 50.0,
+      "ZSize": 50.0,
       "XPosition": 1.5,
-      "YPosition": 0.5,
+      "YPosition": 0.0,
       "ZPosition": -9.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
@@ -25503,14 +25503,14 @@
       "IndexBottom": [
         "0.5_0.5_-9.5"
       ],
-      "Index": "1.5_0.5_-9.5",
-      "PathPrefab": null,
-      "TerritoryInfo": 2,
+      "Index": "1.5_0_-9.5",
+      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
+      "TerritoryInfo": 3,
       "ShelterType": {
-        "Left": 0,
-        "Right": 0,
-        "Bottom": 0,
-        "Front": 0
+        "Left": 2,
+        "Right": 2,
+        "Bottom": 2,
+        "Front": 2
       }
     },
     "1.5_0.5_-8.5": {
@@ -25525,7 +25525,7 @@
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "1.5_0.5_-9.5"
+        "1.5_0_-9.5"
       ],
       "IndexRight": [
         "1.5_0_-7.5"
@@ -25567,7 +25567,7 @@
         "1.5_0.5_-8.5"
       ],
       "IndexRight": [
-        "1.5_0_-6.5"
+        "1.5_0.5_-6.5"
       ],
       "IndexUp": [
         "1.5_1.5_-7.5"
@@ -25591,12 +25591,12 @@
         "Front": 2
       }
     },
-    "1.5_0_-6.5": {
-      "XSize": 50.0,
-      "YSize": 50.0,
-      "ZSize": 50.0,
+    "1.5_0.5_-6.5": {
+      "XSize": 0.5,
+      "YSize": 0.5,
+      "ZSize": 0.5,
       "XPosition": 1.5,
-      "YPosition": 0.0,
+      "YPosition": 0.5,
       "ZPosition": -6.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
@@ -25606,7 +25606,7 @@
         "1.5_0_-7.5"
       ],
       "IndexRight": [
-        "1.5_0_-5.5"
+        "1.5_0.5_-5.5"
       ],
       "IndexUp": [
         "1.5_1.5_-6.5"
@@ -25620,32 +25620,32 @@
       "IndexBottom": [
         "0.5_0.5_-6.5"
       ],
-      "Index": "1.5_0_-6.5",
-      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
-      "TerritoryInfo": 3,
+      "Index": "1.5_0.5_-6.5",
+      "PathPrefab": null,
+      "TerritoryInfo": 2,
       "ShelterType": {
-        "Left": 2,
-        "Right": 2,
-        "Bottom": 2,
-        "Front": 2
+        "Left": 0,
+        "Right": 0,
+        "Bottom": 0,
+        "Front": 0
       }
     },
-    "1.5_0_-5.5": {
-      "XSize": 50.0,
-      "YSize": 50.0,
-      "ZSize": 50.0,
+    "1.5_0.5_-5.5": {
+      "XSize": 0.5,
+      "YSize": 0.5,
+      "ZSize": 0.5,
       "XPosition": 1.5,
-      "YPosition": 0.0,
+      "YPosition": 0.5,
       "ZPosition": -5.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "1.5_0_-6.5"
+        "1.5_0.5_-6.5"
       ],
       "IndexRight": [
-        "1.5_0_-4.5"
+        "1.5_0.5_-4.5"
       ],
       "IndexUp": [
         "1.5_1.5_-5.5"
@@ -25659,32 +25659,32 @@
       "IndexBottom": [
         "0.5_0.5_-5.5"
       ],
-      "Index": "1.5_0_-5.5",
-      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
-      "TerritoryInfo": 3,
+      "Index": "1.5_0.5_-5.5",
+      "PathPrefab": null,
+      "TerritoryInfo": 2,
       "ShelterType": {
-        "Left": 2,
-        "Right": 2,
-        "Bottom": 2,
-        "Front": 2
+        "Left": 0,
+        "Right": 0,
+        "Bottom": 0,
+        "Front": 0
       }
     },
-    "1.5_0_-4.5": {
-      "XSize": 50.0,
-      "YSize": 50.0,
-      "ZSize": 50.0,
+    "1.5_0.5_-4.5": {
+      "XSize": 0.5,
+      "YSize": 0.5,
+      "ZSize": 0.5,
       "XPosition": 1.5,
-      "YPosition": 0.0,
+      "YPosition": 0.5,
       "ZPosition": -4.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "1.5_0_-5.5"
+        "1.5_0.5_-5.5"
       ],
       "IndexRight": [
-        "1.5_0_-3.5"
+        "1.5_0.5_-3.5"
       ],
       "IndexUp": [
         "1.5_1.5_-4.5"
@@ -25698,32 +25698,32 @@
       "IndexBottom": [
         "0.5_0.5_-4.5"
       ],
-      "Index": "1.5_0_-4.5",
-      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
-      "TerritoryInfo": 3,
+      "Index": "1.5_0.5_-4.5",
+      "PathPrefab": null,
+      "TerritoryInfo": 2,
       "ShelterType": {
-        "Left": 2,
-        "Right": 2,
-        "Bottom": 2,
-        "Front": 2
+        "Left": 0,
+        "Right": 0,
+        "Bottom": 0,
+        "Front": 0
       }
     },
-    "1.5_0_-3.5": {
-      "XSize": 50.0,
-      "YSize": 50.0,
-      "ZSize": 50.0,
+    "1.5_0.5_-3.5": {
+      "XSize": 0.5,
+      "YSize": 0.5,
+      "ZSize": 0.5,
       "XPosition": 1.5,
-      "YPosition": 0.0,
+      "YPosition": 0.5,
       "ZPosition": -3.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "1.5_0_-4.5"
+        "1.5_0.5_-4.5"
       ],
       "IndexRight": [
-        "1.5_0_-2.5"
+        "1.5_0.5_-2.5"
       ],
       "IndexUp": [
         "1.5_1.5_-3.5"
@@ -25737,32 +25737,32 @@
       "IndexBottom": [
         "0.5_0.5_-3.5"
       ],
-      "Index": "1.5_0_-3.5",
-      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
-      "TerritoryInfo": 3,
+      "Index": "1.5_0.5_-3.5",
+      "PathPrefab": null,
+      "TerritoryInfo": 2,
       "ShelterType": {
-        "Left": 2,
-        "Right": 2,
-        "Bottom": 2,
-        "Front": 2
+        "Left": 0,
+        "Right": 0,
+        "Bottom": 0,
+        "Front": 0
       }
     },
-    "1.5_0_-2.5": {
-      "XSize": 50.0,
-      "YSize": 50.0,
-      "ZSize": 50.0,
+    "1.5_0.5_-2.5": {
+      "XSize": 0.5,
+      "YSize": 0.5,
+      "ZSize": 0.5,
       "XPosition": 1.5,
-      "YPosition": 0.0,
+      "YPosition": 0.5,
       "ZPosition": -2.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "1.5_0_-3.5"
+        "1.5_0.5_-3.5"
       ],
       "IndexRight": [
-        "1.5_0_-1.5"
+        "1.5_0.5_-1.5"
       ],
       "IndexUp": [
         "1.5_1.5_-2.5"
@@ -25771,37 +25771,37 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "2.5_0_-2.5"
+        "2.5_0.5_-2.5"
       ],
       "IndexBottom": [
         "0.5_0.5_-2.5"
       ],
-      "Index": "1.5_0_-2.5",
-      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
-      "TerritoryInfo": 3,
+      "Index": "1.5_0.5_-2.5",
+      "PathPrefab": null,
+      "TerritoryInfo": 2,
       "ShelterType": {
-        "Left": 2,
-        "Right": 2,
-        "Bottom": 2,
-        "Front": 2
+        "Left": 0,
+        "Right": 0,
+        "Bottom": 0,
+        "Front": 0
       }
     },
-    "1.5_0_-1.5": {
-      "XSize": 50.0,
-      "YSize": 50.0,
-      "ZSize": 50.0,
+    "1.5_0.5_-1.5": {
+      "XSize": 0.5,
+      "YSize": 0.5,
+      "ZSize": 0.5,
       "XPosition": 1.5,
-      "YPosition": 0.0,
+      "YPosition": 0.5,
       "ZPosition": -1.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "1.5_0_-2.5"
+        "1.5_0.5_-2.5"
       ],
       "IndexRight": [
-        "1.5_0_-0.5"
+        "1.5_0.5_-0.5"
       ],
       "IndexUp": [
         "1.5_1.5_-1.5"
@@ -25815,32 +25815,32 @@
       "IndexBottom": [
         "0.5_0.5_-1.5"
       ],
-      "Index": "1.5_0_-1.5",
-      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
-      "TerritoryInfo": 3,
+      "Index": "1.5_0.5_-1.5",
+      "PathPrefab": null,
+      "TerritoryInfo": 2,
       "ShelterType": {
-        "Left": 2,
-        "Right": 2,
-        "Bottom": 2,
-        "Front": 2
+        "Left": 0,
+        "Right": 0,
+        "Bottom": 0,
+        "Front": 0
       }
     },
-    "1.5_0_-0.5": {
-      "XSize": 50.0,
-      "YSize": 50.0,
-      "ZSize": 50.0,
+    "1.5_0.5_-0.5": {
+      "XSize": 0.5,
+      "YSize": 0.5,
+      "ZSize": 0.5,
       "XPosition": 1.5,
-      "YPosition": 0.0,
+      "YPosition": 0.5,
       "ZPosition": -0.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "1.5_0_-1.5"
+        "1.5_0.5_-1.5"
       ],
       "IndexRight": [
-        "1.5_0_0.5"
+        "1.5_0.5_0.5"
       ],
       "IndexUp": [
         "1.5_1.5_-0.5"
@@ -25854,29 +25854,29 @@
       "IndexBottom": [
         "0.5_0.5_-0.5"
       ],
-      "Index": "1.5_0_-0.5",
-      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
-      "TerritoryInfo": 3,
+      "Index": "1.5_0.5_-0.5",
+      "PathPrefab": null,
+      "TerritoryInfo": 2,
       "ShelterType": {
-        "Left": 2,
-        "Right": 2,
-        "Bottom": 2,
-        "Front": 2
+        "Left": 0,
+        "Right": 0,
+        "Bottom": 0,
+        "Front": 0
       }
     },
-    "1.5_0_0.5": {
-      "XSize": 50.0,
-      "YSize": 50.0,
-      "ZSize": 50.0,
+    "1.5_0.5_0.5": {
+      "XSize": 0.5,
+      "YSize": 0.5,
+      "ZSize": 0.5,
       "XPosition": 1.5,
-      "YPosition": 0.0,
+      "YPosition": 0.5,
       "ZPosition": 0.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "1.5_0_-0.5"
+        "1.5_0.5_-0.5"
       ],
       "IndexRight": [
         "1.5_0.5_1.5"
@@ -25893,14 +25893,14 @@
       "IndexBottom": [
         "0.5_0.5_0.5"
       ],
-      "Index": "1.5_0_0.5",
-      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
-      "TerritoryInfo": 3,
+      "Index": "1.5_0.5_0.5",
+      "PathPrefab": null,
+      "TerritoryInfo": 2,
       "ShelterType": {
-        "Left": 2,
-        "Right": 2,
-        "Bottom": 2,
-        "Front": 2
+        "Left": 0,
+        "Right": 0,
+        "Bottom": 0,
+        "Front": 0
       }
     },
     "1.5_0.5_1.5": {
@@ -25915,7 +25915,7 @@
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "1.5_0_0.5"
+        "1.5_0.5_0.5"
       ],
       "IndexRight": [
         "1.5_0.5_2.5"
@@ -26271,7 +26271,7 @@
         "1.5_2.5_-9.5"
       ],
       "IndexDown": [
-        "1.5_0.5_-9.5"
+        "1.5_0_-9.5"
       ],
       "IndexFront": [
         "2.5_1.5_-9.5"
@@ -26388,7 +26388,7 @@
         "1.5_2.5_-6.5"
       ],
       "IndexDown": [
-        "1.5_0_-6.5"
+        "1.5_0.5_-6.5"
       ],
       "IndexFront": [
         "2.5_1.5_-6.5"
@@ -26427,7 +26427,7 @@
         "1.5_2.5_-5.5"
       ],
       "IndexDown": [
-        "1.5_0_-5.5"
+        "1.5_0.5_-5.5"
       ],
       "IndexFront": [
         "2.5_1.5_-5.5"
@@ -26466,7 +26466,7 @@
         "1.5_2.5_-4.5"
       ],
       "IndexDown": [
-        "1.5_0_-4.5"
+        "1.5_0.5_-4.5"
       ],
       "IndexFront": [
         "2.5_1.5_-4.5"
@@ -26505,7 +26505,7 @@
         "1.5_2.5_-3.5"
       ],
       "IndexDown": [
-        "1.5_0_-3.5"
+        "1.5_0.5_-3.5"
       ],
       "IndexFront": [
         "2.5_1.5_-3.5"
@@ -26544,7 +26544,7 @@
         "1.5_2.5_-2.5"
       ],
       "IndexDown": [
-        "1.5_0_-2.5"
+        "1.5_0.5_-2.5"
       ],
       "IndexFront": [
         "2.5_1.5_-2.5"
@@ -26583,7 +26583,7 @@
         "1.5_2.5_-1.5"
       ],
       "IndexDown": [
-        "1.5_0_-1.5"
+        "1.5_0.5_-1.5"
       ],
       "IndexFront": [
         "2.5_1.5_-1.5"
@@ -26622,7 +26622,7 @@
         "1.5_2.5_-0.5"
       ],
       "IndexDown": [
-        "1.5_0_-0.5"
+        "1.5_0.5_-0.5"
       ],
       "IndexFront": [
         "2.5_1.5_-0.5"
@@ -26661,7 +26661,7 @@
         "1.5_2.5_0.5"
       ],
       "IndexDown": [
-        "1.5_0_0.5"
+        "1.5_0.5_0.5"
       ],
       "IndexFront": [
         "2.5_1.5_0.5"
@@ -27789,7 +27789,7 @@
         "3.5_0.5_-9.5"
       ],
       "IndexBottom": [
-        "1.5_0.5_-9.5"
+        "1.5_0_-9.5"
       ],
       "Index": "2.5_0.5_-9.5",
       "PathPrefab": null,
@@ -27825,7 +27825,7 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "3.5_0.5_-8.5"
+        "3.5_0_-8.5"
       ],
       "IndexBottom": [
         "1.5_0.5_-8.5"
@@ -27903,10 +27903,10 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "3.5_0.5_-6.5"
+        "3.5_0_-6.5"
       ],
       "IndexBottom": [
-        "1.5_0_-6.5"
+        "1.5_0.5_-6.5"
       ],
       "Index": "2.5_0.5_-6.5",
       "PathPrefab": null,
@@ -27945,7 +27945,7 @@
         "3.5_0.5_-5.5"
       ],
       "IndexBottom": [
-        "1.5_0_-5.5"
+        "1.5_0.5_-5.5"
       ],
       "Index": "2.5_0.5_-5.5",
       "PathPrefab": null,
@@ -27984,7 +27984,7 @@
         "3.5_0.5_-4.5"
       ],
       "IndexBottom": [
-        "1.5_0_-4.5"
+        "1.5_0.5_-4.5"
       ],
       "Index": "2.5_0.5_-4.5",
       "PathPrefab": null,
@@ -28011,7 +28011,7 @@
         "2.5_0.5_-4.5"
       ],
       "IndexRight": [
-        "2.5_0_-2.5"
+        "2.5_0.5_-2.5"
       ],
       "IndexUp": [
         "2.5_1.5_-3.5"
@@ -28023,7 +28023,7 @@
         "3.5_0.5_-3.5"
       ],
       "IndexBottom": [
-        "1.5_0_-3.5"
+        "1.5_0.5_-3.5"
       ],
       "Index": "2.5_0.5_-3.5",
       "PathPrefab": null,
@@ -28035,12 +28035,12 @@
         "Front": 0
       }
     },
-    "2.5_0_-2.5": {
-      "XSize": 50.0,
-      "YSize": 50.0,
-      "ZSize": 50.0,
+    "2.5_0.5_-2.5": {
+      "XSize": 0.5,
+      "YSize": 0.5,
+      "ZSize": 0.5,
       "XPosition": 2.5,
-      "YPosition": 0.0,
+      "YPosition": 0.5,
       "ZPosition": -2.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
@@ -28059,19 +28059,19 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "3.5_0_-2.5"
+        "3.5_0.5_-2.5"
       ],
       "IndexBottom": [
-        "1.5_0_-2.5"
+        "1.5_0.5_-2.5"
       ],
-      "Index": "2.5_0_-2.5",
-      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
-      "TerritoryInfo": 3,
+      "Index": "2.5_0.5_-2.5",
+      "PathPrefab": null,
+      "TerritoryInfo": 2,
       "ShelterType": {
-        "Left": 2,
-        "Right": 2,
-        "Bottom": 2,
-        "Front": 2
+        "Left": 0,
+        "Right": 0,
+        "Bottom": 0,
+        "Front": 0
       }
     },
     "2.5_0.5_-1.5": {
@@ -28086,7 +28086,7 @@
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "2.5_0_-2.5"
+        "2.5_0.5_-2.5"
       ],
       "IndexRight": [
         "2.5_0.5_-0.5"
@@ -28101,7 +28101,7 @@
         "3.5_0.5_-1.5"
       ],
       "IndexBottom": [
-        "1.5_0_-1.5"
+        "1.5_0.5_-1.5"
       ],
       "Index": "2.5_0.5_-1.5",
       "PathPrefab": null,
@@ -28140,7 +28140,7 @@
         "3.5_0.5_-0.5"
       ],
       "IndexBottom": [
-        "1.5_0_-0.5"
+        "1.5_0.5_-0.5"
       ],
       "Index": "2.5_0.5_-0.5",
       "PathPrefab": null,
@@ -28179,7 +28179,7 @@
         "3.5_0.5_0.5"
       ],
       "IndexBottom": [
-        "1.5_0_0.5"
+        "1.5_0.5_0.5"
       ],
       "Index": "2.5_0.5_0.5",
       "PathPrefab": null,
@@ -28640,7 +28640,7 @@
         "2.5_0.5_-7.5"
       ],
       "IndexFront": [
-        "3.5_1.5_-7.5"
+        "3.5_1_-7.5"
       ],
       "IndexBottom": [
         "1.5_1.5_-7.5"
@@ -28832,7 +28832,7 @@
         "2.5_2.5_-2.5"
       ],
       "IndexDown": [
-        "2.5_0_-2.5"
+        "2.5_0.5_-2.5"
       ],
       "IndexFront": [
         "3.5_1.5_-2.5"
@@ -30065,7 +30065,7 @@
       "WRotation": 1.0,
       "IndexLeft": [],
       "IndexRight": [
-        "3.5_0.5_-8.5"
+        "3.5_0_-8.5"
       ],
       "IndexUp": [
         "3.5_1.5_-9.5"
@@ -30089,12 +30089,12 @@
         "Front": 0
       }
     },
-    "3.5_0.5_-8.5": {
-      "XSize": 0.5,
-      "YSize": 0.5,
-      "ZSize": 0.5,
+    "3.5_0_-8.5": {
+      "XSize": 50.0,
+      "YSize": 50.0,
+      "ZSize": 50.0,
       "XPosition": 3.5,
-      "YPosition": 0.5,
+      "YPosition": 0.0,
       "ZPosition": -8.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
@@ -30118,14 +30118,14 @@
       "IndexBottom": [
         "2.5_0.5_-8.5"
       ],
-      "Index": "3.5_0.5_-8.5",
-      "PathPrefab": null,
-      "TerritoryInfo": 2,
+      "Index": "3.5_0_-8.5",
+      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
+      "TerritoryInfo": 3,
       "ShelterType": {
-        "Left": 0,
-        "Right": 0,
-        "Bottom": 0,
-        "Front": 0
+        "Left": 2,
+        "Right": 2,
+        "Bottom": 2,
+        "Front": 2
       }
     },
     "3.5_0.5_-7.5": {
@@ -30140,13 +30140,13 @@
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "3.5_0.5_-8.5"
+        "3.5_0_-8.5"
       ],
       "IndexRight": [
-        "3.5_0.5_-6.5"
+        "3.5_0_-6.5"
       ],
       "IndexUp": [
-        "3.5_1.5_-7.5"
+        "3.5_1_-7.5"
       ],
       "IndexDown": [
         "0_-0.5_0"
@@ -30167,12 +30167,12 @@
         "Front": 0
       }
     },
-    "3.5_0.5_-6.5": {
-      "XSize": 0.5,
-      "YSize": 0.5,
-      "ZSize": 0.5,
+    "3.5_0_-6.5": {
+      "XSize": 50.0,
+      "YSize": 50.0,
+      "ZSize": 50.0,
       "XPosition": 3.5,
-      "YPosition": 0.5,
+      "YPosition": 0.0,
       "ZPosition": -6.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
@@ -30196,14 +30196,14 @@
       "IndexBottom": [
         "2.5_0.5_-6.5"
       ],
-      "Index": "3.5_0.5_-6.5",
-      "PathPrefab": null,
-      "TerritoryInfo": 2,
+      "Index": "3.5_0_-6.5",
+      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
+      "TerritoryInfo": 3,
       "ShelterType": {
-        "Left": 0,
-        "Right": 0,
-        "Bottom": 0,
-        "Front": 0
+        "Left": 2,
+        "Right": 2,
+        "Bottom": 2,
+        "Front": 2
       }
     },
     "3.5_0.5_-5.5": {
@@ -30218,7 +30218,7 @@
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "3.5_0.5_-6.5"
+        "3.5_0_-6.5"
       ],
       "IndexRight": [
         "3.5_0.5_-4.5"
@@ -30299,7 +30299,7 @@
         "3.5_0.5_-4.5"
       ],
       "IndexRight": [
-        "3.5_0_-2.5"
+        "3.5_0.5_-2.5"
       ],
       "IndexUp": [
         "3.5_1.5_-3.5"
@@ -30323,12 +30323,12 @@
         "Front": 0
       }
     },
-    "3.5_0_-2.5": {
-      "XSize": 50.0,
-      "YSize": 50.0,
-      "ZSize": 50.0,
+    "3.5_0.5_-2.5": {
+      "XSize": 0.5,
+      "YSize": 0.5,
+      "ZSize": 0.5,
       "XPosition": 3.5,
-      "YPosition": 0.0,
+      "YPosition": 0.5,
       "ZPosition": -2.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
@@ -30350,16 +30350,16 @@
         "4.5_0.5_-2.5"
       ],
       "IndexBottom": [
-        "2.5_0_-2.5"
+        "2.5_0.5_-2.5"
       ],
-      "Index": "3.5_0_-2.5",
-      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
-      "TerritoryInfo": 3,
+      "Index": "3.5_0.5_-2.5",
+      "PathPrefab": null,
+      "TerritoryInfo": 2,
       "ShelterType": {
-        "Left": 2,
-        "Right": 2,
-        "Bottom": 2,
-        "Front": 2
+        "Left": 0,
+        "Right": 0,
+        "Bottom": 0,
+        "Front": 0
       }
     },
     "3.5_0.5_-1.5": {
@@ -30374,7 +30374,7 @@
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "3.5_0_-2.5"
+        "3.5_0.5_-2.5"
       ],
       "IndexRight": [
         "3.5_0.5_-0.5"
@@ -30392,8 +30392,8 @@
         "2.5_0.5_-1.5"
       ],
       "Index": "3.5_0.5_-1.5",
-      "PathPrefab": "Prefabs/Capsule",
-      "TerritoryInfo": 0,
+      "PathPrefab": null,
+      "TerritoryInfo": 2,
       "ShelterType": {
         "Left": 0,
         "Right": 0,
@@ -30626,8 +30626,8 @@
         "2.5_0.5_4.5"
       ],
       "Index": "3.5_0.5_4.5",
-      "PathPrefab": null,
-      "TerritoryInfo": 2,
+      "PathPrefab": "Prefabs/Capsule",
+      "TerritoryInfo": 0,
       "ShelterType": {
         "Left": 0,
         "Right": 0,
@@ -30880,13 +30880,13 @@
         "3.5_1.5_-9.5"
       ],
       "IndexRight": [
-        "3.5_1.5_-7.5"
+        "3.5_1_-7.5"
       ],
       "IndexUp": [
         "3.5_2.5_-8.5"
       ],
       "IndexDown": [
-        "3.5_0.5_-8.5"
+        "3.5_0_-8.5"
       ],
       "IndexFront": [
         "4.5_1.5_-8.5"
@@ -30904,12 +30904,12 @@
         "Front": 0
       }
     },
-    "3.5_1.5_-7.5": {
-      "XSize": 0.5,
-      "YSize": 0.5,
-      "ZSize": 0.5,
+    "3.5_1_-7.5": {
+      "XSize": 50.0,
+      "YSize": 50.0,
+      "ZSize": 50.0,
       "XPosition": 3.5,
-      "YPosition": 1.5,
+      "YPosition": 1.0,
       "ZPosition": -7.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
@@ -30933,14 +30933,14 @@
       "IndexBottom": [
         "2.5_1.5_-7.5"
       ],
-      "Index": "3.5_1.5_-7.5",
-      "PathPrefab": null,
-      "TerritoryInfo": 2,
+      "Index": "3.5_1_-7.5",
+      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
+      "TerritoryInfo": 3,
       "ShelterType": {
-        "Left": 0,
-        "Right": 0,
-        "Bottom": 0,
-        "Front": 0
+        "Left": 2,
+        "Right": 2,
+        "Bottom": 2,
+        "Front": 2
       }
     },
     "3.5_1.5_-6.5": {
@@ -30955,7 +30955,7 @@
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "3.5_1.5_-7.5"
+        "3.5_1_-7.5"
       ],
       "IndexRight": [
         "3.5_1.5_-5.5"
@@ -30964,7 +30964,7 @@
         "3.5_2.5_-6.5"
       ],
       "IndexDown": [
-        "3.5_0.5_-6.5"
+        "3.5_0_-6.5"
       ],
       "IndexFront": [
         "4.5_1.5_-6.5"
@@ -31120,7 +31120,7 @@
         "3.5_2.5_-2.5"
       ],
       "IndexDown": [
-        "3.5_0_-2.5"
+        "3.5_0.5_-2.5"
       ],
       "IndexFront": [
         "4.5_1.5_-2.5"
@@ -31695,7 +31695,7 @@
       ],
       "IndexUp": [],
       "IndexDown": [
-        "3.5_1.5_-7.5"
+        "3.5_1_-7.5"
       ],
       "IndexFront": [
         "4.5_2.5_-7.5"
@@ -32404,7 +32404,7 @@
         "5.5_0.5_-8.5"
       ],
       "IndexBottom": [
-        "3.5_0.5_-8.5"
+        "3.5_0_-8.5"
       ],
       "Index": "4.5_0.5_-8.5",
       "PathPrefab": null,
@@ -32479,10 +32479,10 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "5.5_0.5_-6.5"
+        "5.5_0_-6.5"
       ],
       "IndexBottom": [
-        "3.5_0.5_-6.5"
+        "3.5_0_-6.5"
       ],
       "Index": "4.5_0.5_-6.5",
       "PathPrefab": null,
@@ -32638,7 +32638,7 @@
         "5.5_0.5_-2.5"
       ],
       "IndexBottom": [
-        "3.5_0_-2.5"
+        "3.5_0.5_-2.5"
       ],
       "Index": "4.5_0.5_-2.5",
       "PathPrefab": null,
@@ -33219,7 +33219,7 @@
         "5.5_1.5_-7.5"
       ],
       "IndexBottom": [
-        "3.5_1.5_-7.5"
+        "3.5_1_-7.5"
       ],
       "Index": "4.5_1.5_-7.5",
       "PathPrefab": null,
@@ -33255,7 +33255,7 @@
         "4.5_0.5_-6.5"
       ],
       "IndexFront": [
-        "5.5_1.5_-6.5"
+        "5.5_1_-6.5"
       ],
       "IndexBottom": [
         "3.5_1.5_-6.5"
@@ -34719,7 +34719,7 @@
         "5.5_0.5_-8.5"
       ],
       "IndexRight": [
-        "5.5_0.5_-6.5"
+        "5.5_0_-6.5"
       ],
       "IndexUp": [
         "5.5_1.5_-7.5"
@@ -34743,12 +34743,12 @@
         "Front": 0
       }
     },
-    "5.5_0.5_-6.5": {
-      "XSize": 0.5,
-      "YSize": 0.5,
-      "ZSize": 0.5,
+    "5.5_0_-6.5": {
+      "XSize": 50.0,
+      "YSize": 50.0,
+      "ZSize": 50.0,
       "XPosition": 5.5,
-      "YPosition": 0.5,
+      "YPosition": 0.0,
       "ZPosition": -6.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
@@ -34761,7 +34761,7 @@
         "5.5_0.5_-5.5"
       ],
       "IndexUp": [
-        "5.5_1.5_-6.5"
+        "5.5_1_-6.5"
       ],
       "IndexDown": [
         "0_-0.5_0"
@@ -34772,14 +34772,14 @@
       "IndexBottom": [
         "4.5_0.5_-6.5"
       ],
-      "Index": "5.5_0.5_-6.5",
-      "PathPrefab": null,
-      "TerritoryInfo": 2,
+      "Index": "5.5_0_-6.5",
+      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
+      "TerritoryInfo": 3,
       "ShelterType": {
-        "Left": 0,
-        "Right": 0,
-        "Bottom": 0,
-        "Front": 0
+        "Left": 2,
+        "Right": 2,
+        "Bottom": 2,
+        "Front": 2
       }
     },
     "5.5_0.5_-5.5": {
@@ -34794,7 +34794,7 @@
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "5.5_0.5_-6.5"
+        "5.5_0_-6.5"
       ],
       "IndexRight": [
         "5.5_0.5_-4.5"
@@ -35495,7 +35495,7 @@
         "5.5_1.5_-8.5"
       ],
       "IndexRight": [
-        "5.5_1.5_-6.5"
+        "5.5_1_-6.5"
       ],
       "IndexUp": [
         "5.5_2.5_-7.5"
@@ -35519,12 +35519,12 @@
         "Front": 0
       }
     },
-    "5.5_1.5_-6.5": {
-      "XSize": 0.5,
-      "YSize": 0.5,
-      "ZSize": 0.5,
+    "5.5_1_-6.5": {
+      "XSize": 50.0,
+      "YSize": 50.0,
+      "ZSize": 50.0,
       "XPosition": 5.5,
-      "YPosition": 1.5,
+      "YPosition": 1.0,
       "ZPosition": -6.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
@@ -35540,7 +35540,7 @@
         "5.5_2.5_-6.5"
       ],
       "IndexDown": [
-        "5.5_0.5_-6.5"
+        "5.5_0_-6.5"
       ],
       "IndexFront": [
         "6.5_1.5_-6.5"
@@ -35548,14 +35548,14 @@
       "IndexBottom": [
         "4.5_1.5_-6.5"
       ],
-      "Index": "5.5_1.5_-6.5",
-      "PathPrefab": null,
-      "TerritoryInfo": 2,
+      "Index": "5.5_1_-6.5",
+      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
+      "TerritoryInfo": 3,
       "ShelterType": {
-        "Left": 0,
-        "Right": 0,
-        "Bottom": 0,
-        "Front": 0
+        "Left": 2,
+        "Right": 2,
+        "Bottom": 2,
+        "Front": 2
       }
     },
     "5.5_1.5_-5.5": {
@@ -35570,7 +35570,7 @@
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "5.5_1.5_-6.5"
+        "5.5_1_-6.5"
       ],
       "IndexRight": [
         "5.5_1.5_-4.5"
@@ -36308,7 +36308,7 @@
       ],
       "IndexUp": [],
       "IndexDown": [
-        "5.5_1.5_-6.5"
+        "5.5_1_-6.5"
       ],
       "IndexFront": [
         "6.5_2.5_-6.5"
@@ -37058,7 +37058,7 @@
         "7.5_0.5_-6.5"
       ],
       "IndexBottom": [
-        "5.5_0.5_-6.5"
+        "5.5_0_-6.5"
       ],
       "Index": "6.5_0.5_-6.5",
       "PathPrefab": null,
@@ -37834,7 +37834,7 @@
         "7.5_1.5_-6.5"
       ],
       "IndexBottom": [
-        "5.5_1.5_-6.5"
+        "5.5_1_-6.5"
       ],
       "Index": "6.5_1.5_-6.5",
       "PathPrefab": null,
@@ -45946,33 +45946,6 @@
         "Right": 0,
         "Bottom": 0,
         "Front": 0
-      }
-    },
-    "0_0_0": {
-      "XSize": 50.0,
-      "YSize": 50.0,
-      "ZSize": 50.0,
-      "XPosition": 0.0,
-      "YPosition": 0.0,
-      "ZPosition": 0.0,
-      "XRotation": 0.0,
-      "YRotation": 0.0,
-      "ZRotation": 0.0,
-      "WRotation": 1.0,
-      "IndexLeft": [],
-      "IndexRight": [],
-      "IndexUp": [],
-      "IndexDown": [],
-      "IndexFront": [],
-      "IndexBottom": [],
-      "Index": "0_0_0",
-      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
-      "TerritoryInfo": 3,
-      "ShelterType": {
-        "Left": 2,
-        "Right": 2,
-        "Bottom": 2,
-        "Front": 2
       }
     }
   },
@@ -46218,17 +46191,17 @@
         "0.5_0.5_7.5",
         "0.5_0.5_8.5",
         "0.5_0.5_9.5",
-        "1.5_0.5_-9.5",
+        "3.5_0_-6.5",
         "1.5_0.5_-8.5",
-        "1.5_0_-6.5",
-        "1.5_0_-5.5",
-        "1.5_0_-4.5",
-        "1.5_0_-3.5",
-        "1.5_0_-2.5",
-        "1.5_0_-1.5",
-        "1.5_0_-0.5",
-        "1.5_0_0.5",
-        "2.5_0_-2.5",
+        "5.5_0_-6.5",
+        "1.5_0.5_-6.5",
+        "1.5_0.5_-5.5",
+        "1.5_0.5_-4.5",
+        "1.5_0.5_-3.5",
+        "1.5_0.5_-2.5",
+        "1.5_0.5_-1.5",
+        "1.5_0.5_-0.5",
+        "1.5_0.5_0.5",
         "1.5_0.5_1.5",
         "1.5_0.5_2.5",
         "1.5_0.5_3.5",
@@ -46245,7 +46218,7 @@
         "2.5_0.5_-5.5",
         "2.5_0.5_-4.5",
         "2.5_0.5_-3.5",
-        "3.5_0_-2.5",
+        "2.5_0.5_-2.5",
         "2.5_0.5_-1.5",
         "2.5_0.5_-0.5",
         "2.5_0.5_0.5",
@@ -46259,12 +46232,12 @@
         "2.5_0.5_8.5",
         "2.5_0.5_9.5",
         "3.5_0.5_-9.5",
-        "3.5_0.5_-8.5",
         "3.5_0.5_-7.5",
-        "3.5_0.5_-6.5",
+        "1.5_0_-7.5",
         "3.5_0.5_-5.5",
         "3.5_0.5_-4.5",
         "3.5_0.5_-3.5",
+        "3.5_0.5_-2.5",
         "3.5_0.5_-1.5",
         "3.5_0.5_-0.5",
         "3.5_0.5_0.5",
@@ -46300,7 +46273,7 @@
         "5.5_0.5_-9.5",
         "5.5_0.5_-8.5",
         "5.5_0.5_-7.5",
-        "5.5_0.5_-6.5",
+        "3.5_0_-8.5",
         "5.5_0.5_-5.5",
         "5.5_0.5_-4.5",
         "5.5_0.5_-3.5",
@@ -46397,7 +46370,7 @@
         "9.5_0.5_7.5",
         "9.5_0.5_8.5",
         "9.5_0.5_9.5",
-        "1.5_0_-7.5"
+        "1.5_0_-9.5"
       ],
       "IndexDown": [],
       "IndexFront": [],
@@ -69194,7 +69167,7 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "1.5_0.5_-9.5"
+        "1.5_0_-9.5"
       ],
       "IndexBottom": [
         "-0.5_0.5_-9.5"
@@ -69311,7 +69284,7 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "1.5_0_-6.5"
+        "1.5_0.5_-6.5"
       ],
       "IndexBottom": [
         "-0.5_0.5_-6.5"
@@ -69350,7 +69323,7 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "1.5_0_-5.5"
+        "1.5_0.5_-5.5"
       ],
       "IndexBottom": [
         "-0.5_0.5_-5.5"
@@ -69389,7 +69362,7 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "1.5_0_-4.5"
+        "1.5_0.5_-4.5"
       ],
       "IndexBottom": [
         "-0.5_0.5_-4.5"
@@ -69428,7 +69401,7 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "1.5_0_-3.5"
+        "1.5_0.5_-3.5"
       ],
       "IndexBottom": [
         "-0.5_0.5_-3.5"
@@ -69467,7 +69440,7 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "1.5_0_-2.5"
+        "1.5_0.5_-2.5"
       ],
       "IndexBottom": [
         "-0.5_0.5_-2.5"
@@ -69506,7 +69479,7 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "1.5_0_-1.5"
+        "1.5_0.5_-1.5"
       ],
       "IndexBottom": [
         "-0.5_0.5_-1.5"
@@ -69545,7 +69518,7 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "1.5_0_-0.5"
+        "1.5_0.5_-0.5"
       ],
       "IndexBottom": [
         "-0.5_0.5_-0.5"
@@ -69584,7 +69557,7 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "1.5_0_0.5"
+        "1.5_0.5_0.5"
       ],
       "IndexBottom": [
         "-0.5_0.5_0.5"
@@ -71460,12 +71433,12 @@
         "Front": 0
       }
     },
-    "1.5_0.5_-9.5": {
-      "XSize": 0.5,
-      "YSize": 0.5,
-      "ZSize": 0.5,
+    "1.5_0_-9.5": {
+      "XSize": 50.0,
+      "YSize": 50.0,
+      "ZSize": 50.0,
       "XPosition": 1.5,
-      "YPosition": 0.5,
+      "YPosition": 0.0,
       "ZPosition": -9.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
@@ -71487,14 +71460,14 @@
       "IndexBottom": [
         "0.5_0.5_-9.5"
       ],
-      "Index": "1.5_0.5_-9.5",
-      "PathPrefab": null,
-      "TerritoryInfo": 2,
+      "Index": "1.5_0_-9.5",
+      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
+      "TerritoryInfo": 3,
       "ShelterType": {
-        "Left": 0,
-        "Right": 0,
-        "Bottom": 0,
-        "Front": 0
+        "Left": 2,
+        "Right": 2,
+        "Bottom": 2,
+        "Front": 2
       }
     },
     "1.5_0.5_-8.5": {
@@ -71509,7 +71482,7 @@
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "1.5_0.5_-9.5"
+        "1.5_0_-9.5"
       ],
       "IndexRight": [
         "1.5_0_-7.5"
@@ -71551,7 +71524,7 @@
         "1.5_0.5_-8.5"
       ],
       "IndexRight": [
-        "1.5_0_-6.5"
+        "1.5_0.5_-6.5"
       ],
       "IndexUp": [
         "1.5_1.5_-7.5"
@@ -71575,12 +71548,12 @@
         "Front": 2
       }
     },
-    "1.5_0_-6.5": {
-      "XSize": 50.0,
-      "YSize": 50.0,
-      "ZSize": 50.0,
+    "1.5_0.5_-6.5": {
+      "XSize": 0.5,
+      "YSize": 0.5,
+      "ZSize": 0.5,
       "XPosition": 1.5,
-      "YPosition": 0.0,
+      "YPosition": 0.5,
       "ZPosition": -6.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
@@ -71590,7 +71563,7 @@
         "1.5_0_-7.5"
       ],
       "IndexRight": [
-        "1.5_0_-5.5"
+        "1.5_0.5_-5.5"
       ],
       "IndexUp": [
         "1.5_1.5_-6.5"
@@ -71604,32 +71577,32 @@
       "IndexBottom": [
         "0.5_0.5_-6.5"
       ],
-      "Index": "1.5_0_-6.5",
-      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
-      "TerritoryInfo": 3,
+      "Index": "1.5_0.5_-6.5",
+      "PathPrefab": null,
+      "TerritoryInfo": 2,
       "ShelterType": {
-        "Left": 2,
-        "Right": 2,
-        "Bottom": 2,
-        "Front": 2
+        "Left": 0,
+        "Right": 0,
+        "Bottom": 0,
+        "Front": 0
       }
     },
-    "1.5_0_-5.5": {
-      "XSize": 50.0,
-      "YSize": 50.0,
-      "ZSize": 50.0,
+    "1.5_0.5_-5.5": {
+      "XSize": 0.5,
+      "YSize": 0.5,
+      "ZSize": 0.5,
       "XPosition": 1.5,
-      "YPosition": 0.0,
+      "YPosition": 0.5,
       "ZPosition": -5.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "1.5_0_-6.5"
+        "1.5_0.5_-6.5"
       ],
       "IndexRight": [
-        "1.5_0_-4.5"
+        "1.5_0.5_-4.5"
       ],
       "IndexUp": [
         "1.5_1.5_-5.5"
@@ -71643,32 +71616,32 @@
       "IndexBottom": [
         "0.5_0.5_-5.5"
       ],
-      "Index": "1.5_0_-5.5",
-      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
-      "TerritoryInfo": 3,
+      "Index": "1.5_0.5_-5.5",
+      "PathPrefab": null,
+      "TerritoryInfo": 2,
       "ShelterType": {
-        "Left": 2,
-        "Right": 2,
-        "Bottom": 2,
-        "Front": 2
+        "Left": 0,
+        "Right": 0,
+        "Bottom": 0,
+        "Front": 0
       }
     },
-    "1.5_0_-4.5": {
-      "XSize": 50.0,
-      "YSize": 50.0,
-      "ZSize": 50.0,
+    "1.5_0.5_-4.5": {
+      "XSize": 0.5,
+      "YSize": 0.5,
+      "ZSize": 0.5,
       "XPosition": 1.5,
-      "YPosition": 0.0,
+      "YPosition": 0.5,
       "ZPosition": -4.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "1.5_0_-5.5"
+        "1.5_0.5_-5.5"
       ],
       "IndexRight": [
-        "1.5_0_-3.5"
+        "1.5_0.5_-3.5"
       ],
       "IndexUp": [
         "1.5_1.5_-4.5"
@@ -71682,32 +71655,32 @@
       "IndexBottom": [
         "0.5_0.5_-4.5"
       ],
-      "Index": "1.5_0_-4.5",
-      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
-      "TerritoryInfo": 3,
+      "Index": "1.5_0.5_-4.5",
+      "PathPrefab": null,
+      "TerritoryInfo": 2,
       "ShelterType": {
-        "Left": 2,
-        "Right": 2,
-        "Bottom": 2,
-        "Front": 2
+        "Left": 0,
+        "Right": 0,
+        "Bottom": 0,
+        "Front": 0
       }
     },
-    "1.5_0_-3.5": {
-      "XSize": 50.0,
-      "YSize": 50.0,
-      "ZSize": 50.0,
+    "1.5_0.5_-3.5": {
+      "XSize": 0.5,
+      "YSize": 0.5,
+      "ZSize": 0.5,
       "XPosition": 1.5,
-      "YPosition": 0.0,
+      "YPosition": 0.5,
       "ZPosition": -3.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "1.5_0_-4.5"
+        "1.5_0.5_-4.5"
       ],
       "IndexRight": [
-        "1.5_0_-2.5"
+        "1.5_0.5_-2.5"
       ],
       "IndexUp": [
         "1.5_1.5_-3.5"
@@ -71721,32 +71694,32 @@
       "IndexBottom": [
         "0.5_0.5_-3.5"
       ],
-      "Index": "1.5_0_-3.5",
-      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
-      "TerritoryInfo": 3,
+      "Index": "1.5_0.5_-3.5",
+      "PathPrefab": null,
+      "TerritoryInfo": 2,
       "ShelterType": {
-        "Left": 2,
-        "Right": 2,
-        "Bottom": 2,
-        "Front": 2
+        "Left": 0,
+        "Right": 0,
+        "Bottom": 0,
+        "Front": 0
       }
     },
-    "1.5_0_-2.5": {
-      "XSize": 50.0,
-      "YSize": 50.0,
-      "ZSize": 50.0,
+    "1.5_0.5_-2.5": {
+      "XSize": 0.5,
+      "YSize": 0.5,
+      "ZSize": 0.5,
       "XPosition": 1.5,
-      "YPosition": 0.0,
+      "YPosition": 0.5,
       "ZPosition": -2.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "1.5_0_-3.5"
+        "1.5_0.5_-3.5"
       ],
       "IndexRight": [
-        "1.5_0_-1.5"
+        "1.5_0.5_-1.5"
       ],
       "IndexUp": [
         "1.5_1.5_-2.5"
@@ -71755,37 +71728,37 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "2.5_0_-2.5"
+        "2.5_0.5_-2.5"
       ],
       "IndexBottom": [
         "0.5_0.5_-2.5"
       ],
-      "Index": "1.5_0_-2.5",
-      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
-      "TerritoryInfo": 3,
+      "Index": "1.5_0.5_-2.5",
+      "PathPrefab": null,
+      "TerritoryInfo": 2,
       "ShelterType": {
-        "Left": 2,
-        "Right": 2,
-        "Bottom": 2,
-        "Front": 2
+        "Left": 0,
+        "Right": 0,
+        "Bottom": 0,
+        "Front": 0
       }
     },
-    "1.5_0_-1.5": {
-      "XSize": 50.0,
-      "YSize": 50.0,
-      "ZSize": 50.0,
+    "1.5_0.5_-1.5": {
+      "XSize": 0.5,
+      "YSize": 0.5,
+      "ZSize": 0.5,
       "XPosition": 1.5,
-      "YPosition": 0.0,
+      "YPosition": 0.5,
       "ZPosition": -1.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "1.5_0_-2.5"
+        "1.5_0.5_-2.5"
       ],
       "IndexRight": [
-        "1.5_0_-0.5"
+        "1.5_0.5_-0.5"
       ],
       "IndexUp": [
         "1.5_1.5_-1.5"
@@ -71799,32 +71772,32 @@
       "IndexBottom": [
         "0.5_0.5_-1.5"
       ],
-      "Index": "1.5_0_-1.5",
-      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
-      "TerritoryInfo": 3,
+      "Index": "1.5_0.5_-1.5",
+      "PathPrefab": null,
+      "TerritoryInfo": 2,
       "ShelterType": {
-        "Left": 2,
-        "Right": 2,
-        "Bottom": 2,
-        "Front": 2
+        "Left": 0,
+        "Right": 0,
+        "Bottom": 0,
+        "Front": 0
       }
     },
-    "1.5_0_-0.5": {
-      "XSize": 50.0,
-      "YSize": 50.0,
-      "ZSize": 50.0,
+    "1.5_0.5_-0.5": {
+      "XSize": 0.5,
+      "YSize": 0.5,
+      "ZSize": 0.5,
       "XPosition": 1.5,
-      "YPosition": 0.0,
+      "YPosition": 0.5,
       "ZPosition": -0.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "1.5_0_-1.5"
+        "1.5_0.5_-1.5"
       ],
       "IndexRight": [
-        "1.5_0_0.5"
+        "1.5_0.5_0.5"
       ],
       "IndexUp": [
         "1.5_1.5_-0.5"
@@ -71838,29 +71811,29 @@
       "IndexBottom": [
         "0.5_0.5_-0.5"
       ],
-      "Index": "1.5_0_-0.5",
-      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
-      "TerritoryInfo": 3,
+      "Index": "1.5_0.5_-0.5",
+      "PathPrefab": null,
+      "TerritoryInfo": 2,
       "ShelterType": {
-        "Left": 2,
-        "Right": 2,
-        "Bottom": 2,
-        "Front": 2
+        "Left": 0,
+        "Right": 0,
+        "Bottom": 0,
+        "Front": 0
       }
     },
-    "1.5_0_0.5": {
-      "XSize": 50.0,
-      "YSize": 50.0,
-      "ZSize": 50.0,
+    "1.5_0.5_0.5": {
+      "XSize": 0.5,
+      "YSize": 0.5,
+      "ZSize": 0.5,
       "XPosition": 1.5,
-      "YPosition": 0.0,
+      "YPosition": 0.5,
       "ZPosition": 0.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "1.5_0_-0.5"
+        "1.5_0.5_-0.5"
       ],
       "IndexRight": [
         "1.5_0.5_1.5"
@@ -71877,14 +71850,14 @@
       "IndexBottom": [
         "0.5_0.5_0.5"
       ],
-      "Index": "1.5_0_0.5",
-      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
-      "TerritoryInfo": 3,
+      "Index": "1.5_0.5_0.5",
+      "PathPrefab": null,
+      "TerritoryInfo": 2,
       "ShelterType": {
-        "Left": 2,
-        "Right": 2,
-        "Bottom": 2,
-        "Front": 2
+        "Left": 0,
+        "Right": 0,
+        "Bottom": 0,
+        "Front": 0
       }
     },
     "1.5_0.5_1.5": {
@@ -71899,7 +71872,7 @@
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "1.5_0_0.5"
+        "1.5_0.5_0.5"
       ],
       "IndexRight": [
         "1.5_0.5_2.5"
@@ -72255,7 +72228,7 @@
         "1.5_2.5_-9.5"
       ],
       "IndexDown": [
-        "1.5_0.5_-9.5"
+        "1.5_0_-9.5"
       ],
       "IndexFront": [
         "2.5_1.5_-9.5"
@@ -72372,7 +72345,7 @@
         "1.5_2.5_-6.5"
       ],
       "IndexDown": [
-        "1.5_0_-6.5"
+        "1.5_0.5_-6.5"
       ],
       "IndexFront": [
         "2.5_1.5_-6.5"
@@ -72411,7 +72384,7 @@
         "1.5_2.5_-5.5"
       ],
       "IndexDown": [
-        "1.5_0_-5.5"
+        "1.5_0.5_-5.5"
       ],
       "IndexFront": [
         "2.5_1.5_-5.5"
@@ -72450,7 +72423,7 @@
         "1.5_2.5_-4.5"
       ],
       "IndexDown": [
-        "1.5_0_-4.5"
+        "1.5_0.5_-4.5"
       ],
       "IndexFront": [
         "2.5_1.5_-4.5"
@@ -72489,7 +72462,7 @@
         "1.5_2.5_-3.5"
       ],
       "IndexDown": [
-        "1.5_0_-3.5"
+        "1.5_0.5_-3.5"
       ],
       "IndexFront": [
         "2.5_1.5_-3.5"
@@ -72528,7 +72501,7 @@
         "1.5_2.5_-2.5"
       ],
       "IndexDown": [
-        "1.5_0_-2.5"
+        "1.5_0.5_-2.5"
       ],
       "IndexFront": [
         "2.5_1.5_-2.5"
@@ -72567,7 +72540,7 @@
         "1.5_2.5_-1.5"
       ],
       "IndexDown": [
-        "1.5_0_-1.5"
+        "1.5_0.5_-1.5"
       ],
       "IndexFront": [
         "2.5_1.5_-1.5"
@@ -72606,7 +72579,7 @@
         "1.5_2.5_-0.5"
       ],
       "IndexDown": [
-        "1.5_0_-0.5"
+        "1.5_0.5_-0.5"
       ],
       "IndexFront": [
         "2.5_1.5_-0.5"
@@ -72645,7 +72618,7 @@
         "1.5_2.5_0.5"
       ],
       "IndexDown": [
-        "1.5_0_0.5"
+        "1.5_0.5_0.5"
       ],
       "IndexFront": [
         "2.5_1.5_0.5"
@@ -73773,7 +73746,7 @@
         "3.5_0.5_-9.5"
       ],
       "IndexBottom": [
-        "1.5_0.5_-9.5"
+        "1.5_0_-9.5"
       ],
       "Index": "2.5_0.5_-9.5",
       "PathPrefab": null,
@@ -73809,7 +73782,7 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "3.5_0.5_-8.5"
+        "3.5_0_-8.5"
       ],
       "IndexBottom": [
         "1.5_0.5_-8.5"
@@ -73887,10 +73860,10 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "3.5_0.5_-6.5"
+        "3.5_0_-6.5"
       ],
       "IndexBottom": [
-        "1.5_0_-6.5"
+        "1.5_0.5_-6.5"
       ],
       "Index": "2.5_0.5_-6.5",
       "PathPrefab": null,
@@ -73929,7 +73902,7 @@
         "3.5_0.5_-5.5"
       ],
       "IndexBottom": [
-        "1.5_0_-5.5"
+        "1.5_0.5_-5.5"
       ],
       "Index": "2.5_0.5_-5.5",
       "PathPrefab": null,
@@ -73968,7 +73941,7 @@
         "3.5_0.5_-4.5"
       ],
       "IndexBottom": [
-        "1.5_0_-4.5"
+        "1.5_0.5_-4.5"
       ],
       "Index": "2.5_0.5_-4.5",
       "PathPrefab": null,
@@ -73995,7 +73968,7 @@
         "2.5_0.5_-4.5"
       ],
       "IndexRight": [
-        "2.5_0_-2.5"
+        "2.5_0.5_-2.5"
       ],
       "IndexUp": [
         "2.5_1.5_-3.5"
@@ -74007,7 +73980,7 @@
         "3.5_0.5_-3.5"
       ],
       "IndexBottom": [
-        "1.5_0_-3.5"
+        "1.5_0.5_-3.5"
       ],
       "Index": "2.5_0.5_-3.5",
       "PathPrefab": null,
@@ -74019,12 +73992,12 @@
         "Front": 0
       }
     },
-    "2.5_0_-2.5": {
-      "XSize": 50.0,
-      "YSize": 50.0,
-      "ZSize": 50.0,
+    "2.5_0.5_-2.5": {
+      "XSize": 0.5,
+      "YSize": 0.5,
+      "ZSize": 0.5,
       "XPosition": 2.5,
-      "YPosition": 0.0,
+      "YPosition": 0.5,
       "ZPosition": -2.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
@@ -74043,19 +74016,19 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "3.5_0_-2.5"
+        "3.5_0.5_-2.5"
       ],
       "IndexBottom": [
-        "1.5_0_-2.5"
+        "1.5_0.5_-2.5"
       ],
-      "Index": "2.5_0_-2.5",
-      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
-      "TerritoryInfo": 3,
+      "Index": "2.5_0.5_-2.5",
+      "PathPrefab": null,
+      "TerritoryInfo": 2,
       "ShelterType": {
-        "Left": 2,
-        "Right": 2,
-        "Bottom": 2,
-        "Front": 2
+        "Left": 0,
+        "Right": 0,
+        "Bottom": 0,
+        "Front": 0
       }
     },
     "2.5_0.5_-1.5": {
@@ -74070,7 +74043,7 @@
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "2.5_0_-2.5"
+        "2.5_0.5_-2.5"
       ],
       "IndexRight": [
         "2.5_0.5_-0.5"
@@ -74085,7 +74058,7 @@
         "3.5_0.5_-1.5"
       ],
       "IndexBottom": [
-        "1.5_0_-1.5"
+        "1.5_0.5_-1.5"
       ],
       "Index": "2.5_0.5_-1.5",
       "PathPrefab": null,
@@ -74124,7 +74097,7 @@
         "3.5_0.5_-0.5"
       ],
       "IndexBottom": [
-        "1.5_0_-0.5"
+        "1.5_0.5_-0.5"
       ],
       "Index": "2.5_0.5_-0.5",
       "PathPrefab": null,
@@ -74163,7 +74136,7 @@
         "3.5_0.5_0.5"
       ],
       "IndexBottom": [
-        "1.5_0_0.5"
+        "1.5_0.5_0.5"
       ],
       "Index": "2.5_0.5_0.5",
       "PathPrefab": null,
@@ -74624,7 +74597,7 @@
         "2.5_0.5_-7.5"
       ],
       "IndexFront": [
-        "3.5_1.5_-7.5"
+        "3.5_1_-7.5"
       ],
       "IndexBottom": [
         "1.5_1.5_-7.5"
@@ -74816,7 +74789,7 @@
         "2.5_2.5_-2.5"
       ],
       "IndexDown": [
-        "2.5_0_-2.5"
+        "2.5_0.5_-2.5"
       ],
       "IndexFront": [
         "3.5_1.5_-2.5"
@@ -76049,7 +76022,7 @@
       "WRotation": 1.0,
       "IndexLeft": [],
       "IndexRight": [
-        "3.5_0.5_-8.5"
+        "3.5_0_-8.5"
       ],
       "IndexUp": [
         "3.5_1.5_-9.5"
@@ -76073,12 +76046,12 @@
         "Front": 0
       }
     },
-    "3.5_0.5_-8.5": {
-      "XSize": 0.5,
-      "YSize": 0.5,
-      "ZSize": 0.5,
+    "3.5_0_-8.5": {
+      "XSize": 50.0,
+      "YSize": 50.0,
+      "ZSize": 50.0,
       "XPosition": 3.5,
-      "YPosition": 0.5,
+      "YPosition": 0.0,
       "ZPosition": -8.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
@@ -76102,14 +76075,14 @@
       "IndexBottom": [
         "2.5_0.5_-8.5"
       ],
-      "Index": "3.5_0.5_-8.5",
-      "PathPrefab": null,
-      "TerritoryInfo": 2,
+      "Index": "3.5_0_-8.5",
+      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
+      "TerritoryInfo": 3,
       "ShelterType": {
-        "Left": 0,
-        "Right": 0,
-        "Bottom": 0,
-        "Front": 0
+        "Left": 2,
+        "Right": 2,
+        "Bottom": 2,
+        "Front": 2
       }
     },
     "3.5_0.5_-7.5": {
@@ -76124,13 +76097,13 @@
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "3.5_0.5_-8.5"
+        "3.5_0_-8.5"
       ],
       "IndexRight": [
-        "3.5_0.5_-6.5"
+        "3.5_0_-6.5"
       ],
       "IndexUp": [
-        "3.5_1.5_-7.5"
+        "3.5_1_-7.5"
       ],
       "IndexDown": [
         "0_-0.5_0"
@@ -76151,12 +76124,12 @@
         "Front": 0
       }
     },
-    "3.5_0.5_-6.5": {
-      "XSize": 0.5,
-      "YSize": 0.5,
-      "ZSize": 0.5,
+    "3.5_0_-6.5": {
+      "XSize": 50.0,
+      "YSize": 50.0,
+      "ZSize": 50.0,
       "XPosition": 3.5,
-      "YPosition": 0.5,
+      "YPosition": 0.0,
       "ZPosition": -6.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
@@ -76180,14 +76153,14 @@
       "IndexBottom": [
         "2.5_0.5_-6.5"
       ],
-      "Index": "3.5_0.5_-6.5",
-      "PathPrefab": null,
-      "TerritoryInfo": 2,
+      "Index": "3.5_0_-6.5",
+      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
+      "TerritoryInfo": 3,
       "ShelterType": {
-        "Left": 0,
-        "Right": 0,
-        "Bottom": 0,
-        "Front": 0
+        "Left": 2,
+        "Right": 2,
+        "Bottom": 2,
+        "Front": 2
       }
     },
     "3.5_0.5_-5.5": {
@@ -76202,7 +76175,7 @@
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "3.5_0.5_-6.5"
+        "3.5_0_-6.5"
       ],
       "IndexRight": [
         "3.5_0.5_-4.5"
@@ -76283,7 +76256,7 @@
         "3.5_0.5_-4.5"
       ],
       "IndexRight": [
-        "3.5_0_-2.5"
+        "3.5_0.5_-2.5"
       ],
       "IndexUp": [
         "3.5_1.5_-3.5"
@@ -76307,12 +76280,12 @@
         "Front": 0
       }
     },
-    "3.5_0_-2.5": {
-      "XSize": 50.0,
-      "YSize": 50.0,
-      "ZSize": 50.0,
+    "3.5_0.5_-2.5": {
+      "XSize": 0.5,
+      "YSize": 0.5,
+      "ZSize": 0.5,
       "XPosition": 3.5,
-      "YPosition": 0.0,
+      "YPosition": 0.5,
       "ZPosition": -2.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
@@ -76334,16 +76307,16 @@
         "4.5_0.5_-2.5"
       ],
       "IndexBottom": [
-        "2.5_0_-2.5"
+        "2.5_0.5_-2.5"
       ],
-      "Index": "3.5_0_-2.5",
-      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
-      "TerritoryInfo": 3,
+      "Index": "3.5_0.5_-2.5",
+      "PathPrefab": null,
+      "TerritoryInfo": 2,
       "ShelterType": {
-        "Left": 2,
-        "Right": 2,
-        "Bottom": 2,
-        "Front": 2
+        "Left": 0,
+        "Right": 0,
+        "Bottom": 0,
+        "Front": 0
       }
     },
     "3.5_0.5_-1.5": {
@@ -76358,7 +76331,7 @@
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "3.5_0_-2.5"
+        "3.5_0.5_-2.5"
       ],
       "IndexRight": [
         "3.5_0.5_-0.5"
@@ -76376,8 +76349,8 @@
         "2.5_0.5_-1.5"
       ],
       "Index": "3.5_0.5_-1.5",
-      "PathPrefab": "Prefabs/Capsule",
-      "TerritoryInfo": 0,
+      "PathPrefab": null,
+      "TerritoryInfo": 2,
       "ShelterType": {
         "Left": 0,
         "Right": 0,
@@ -76610,8 +76583,8 @@
         "2.5_0.5_4.5"
       ],
       "Index": "3.5_0.5_4.5",
-      "PathPrefab": null,
-      "TerritoryInfo": 2,
+      "PathPrefab": "Prefabs/Capsule",
+      "TerritoryInfo": 0,
       "ShelterType": {
         "Left": 0,
         "Right": 0,
@@ -76864,13 +76837,13 @@
         "3.5_1.5_-9.5"
       ],
       "IndexRight": [
-        "3.5_1.5_-7.5"
+        "3.5_1_-7.5"
       ],
       "IndexUp": [
         "3.5_2.5_-8.5"
       ],
       "IndexDown": [
-        "3.5_0.5_-8.5"
+        "3.5_0_-8.5"
       ],
       "IndexFront": [
         "4.5_1.5_-8.5"
@@ -76888,12 +76861,12 @@
         "Front": 0
       }
     },
-    "3.5_1.5_-7.5": {
-      "XSize": 0.5,
-      "YSize": 0.5,
-      "ZSize": 0.5,
+    "3.5_1_-7.5": {
+      "XSize": 50.0,
+      "YSize": 50.0,
+      "ZSize": 50.0,
       "XPosition": 3.5,
-      "YPosition": 1.5,
+      "YPosition": 1.0,
       "ZPosition": -7.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
@@ -76917,14 +76890,14 @@
       "IndexBottom": [
         "2.5_1.5_-7.5"
       ],
-      "Index": "3.5_1.5_-7.5",
-      "PathPrefab": null,
-      "TerritoryInfo": 2,
+      "Index": "3.5_1_-7.5",
+      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
+      "TerritoryInfo": 3,
       "ShelterType": {
-        "Left": 0,
-        "Right": 0,
-        "Bottom": 0,
-        "Front": 0
+        "Left": 2,
+        "Right": 2,
+        "Bottom": 2,
+        "Front": 2
       }
     },
     "3.5_1.5_-6.5": {
@@ -76939,7 +76912,7 @@
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "3.5_1.5_-7.5"
+        "3.5_1_-7.5"
       ],
       "IndexRight": [
         "3.5_1.5_-5.5"
@@ -76948,7 +76921,7 @@
         "3.5_2.5_-6.5"
       ],
       "IndexDown": [
-        "3.5_0.5_-6.5"
+        "3.5_0_-6.5"
       ],
       "IndexFront": [
         "4.5_1.5_-6.5"
@@ -77104,7 +77077,7 @@
         "3.5_2.5_-2.5"
       ],
       "IndexDown": [
-        "3.5_0_-2.5"
+        "3.5_0.5_-2.5"
       ],
       "IndexFront": [
         "4.5_1.5_-2.5"
@@ -77679,7 +77652,7 @@
       ],
       "IndexUp": [],
       "IndexDown": [
-        "3.5_1.5_-7.5"
+        "3.5_1_-7.5"
       ],
       "IndexFront": [
         "4.5_2.5_-7.5"
@@ -78388,7 +78361,7 @@
         "5.5_0.5_-8.5"
       ],
       "IndexBottom": [
-        "3.5_0.5_-8.5"
+        "3.5_0_-8.5"
       ],
       "Index": "4.5_0.5_-8.5",
       "PathPrefab": null,
@@ -78463,10 +78436,10 @@
         "0_-0.5_0"
       ],
       "IndexFront": [
-        "5.5_0.5_-6.5"
+        "5.5_0_-6.5"
       ],
       "IndexBottom": [
-        "3.5_0.5_-6.5"
+        "3.5_0_-6.5"
       ],
       "Index": "4.5_0.5_-6.5",
       "PathPrefab": null,
@@ -78622,7 +78595,7 @@
         "5.5_0.5_-2.5"
       ],
       "IndexBottom": [
-        "3.5_0_-2.5"
+        "3.5_0.5_-2.5"
       ],
       "Index": "4.5_0.5_-2.5",
       "PathPrefab": null,
@@ -79203,7 +79176,7 @@
         "5.5_1.5_-7.5"
       ],
       "IndexBottom": [
-        "3.5_1.5_-7.5"
+        "3.5_1_-7.5"
       ],
       "Index": "4.5_1.5_-7.5",
       "PathPrefab": null,
@@ -79239,7 +79212,7 @@
         "4.5_0.5_-6.5"
       ],
       "IndexFront": [
-        "5.5_1.5_-6.5"
+        "5.5_1_-6.5"
       ],
       "IndexBottom": [
         "3.5_1.5_-6.5"
@@ -80703,7 +80676,7 @@
         "5.5_0.5_-8.5"
       ],
       "IndexRight": [
-        "5.5_0.5_-6.5"
+        "5.5_0_-6.5"
       ],
       "IndexUp": [
         "5.5_1.5_-7.5"
@@ -80727,12 +80700,12 @@
         "Front": 0
       }
     },
-    "5.5_0.5_-6.5": {
-      "XSize": 0.5,
-      "YSize": 0.5,
-      "ZSize": 0.5,
+    "5.5_0_-6.5": {
+      "XSize": 50.0,
+      "YSize": 50.0,
+      "ZSize": 50.0,
       "XPosition": 5.5,
-      "YPosition": 0.5,
+      "YPosition": 0.0,
       "ZPosition": -6.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
@@ -80745,7 +80718,7 @@
         "5.5_0.5_-5.5"
       ],
       "IndexUp": [
-        "5.5_1.5_-6.5"
+        "5.5_1_-6.5"
       ],
       "IndexDown": [
         "0_-0.5_0"
@@ -80756,14 +80729,14 @@
       "IndexBottom": [
         "4.5_0.5_-6.5"
       ],
-      "Index": "5.5_0.5_-6.5",
-      "PathPrefab": null,
-      "TerritoryInfo": 2,
+      "Index": "5.5_0_-6.5",
+      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
+      "TerritoryInfo": 3,
       "ShelterType": {
-        "Left": 0,
-        "Right": 0,
-        "Bottom": 0,
-        "Front": 0
+        "Left": 2,
+        "Right": 2,
+        "Bottom": 2,
+        "Front": 2
       }
     },
     "5.5_0.5_-5.5": {
@@ -80778,7 +80751,7 @@
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "5.5_0.5_-6.5"
+        "5.5_0_-6.5"
       ],
       "IndexRight": [
         "5.5_0.5_-4.5"
@@ -81479,7 +81452,7 @@
         "5.5_1.5_-8.5"
       ],
       "IndexRight": [
-        "5.5_1.5_-6.5"
+        "5.5_1_-6.5"
       ],
       "IndexUp": [
         "5.5_2.5_-7.5"
@@ -81503,12 +81476,12 @@
         "Front": 0
       }
     },
-    "5.5_1.5_-6.5": {
-      "XSize": 0.5,
-      "YSize": 0.5,
-      "ZSize": 0.5,
+    "5.5_1_-6.5": {
+      "XSize": 50.0,
+      "YSize": 50.0,
+      "ZSize": 50.0,
       "XPosition": 5.5,
-      "YPosition": 1.5,
+      "YPosition": 1.0,
       "ZPosition": -6.5,
       "XRotation": 0.0,
       "YRotation": 0.0,
@@ -81524,7 +81497,7 @@
         "5.5_2.5_-6.5"
       ],
       "IndexDown": [
-        "5.5_0.5_-6.5"
+        "5.5_0_-6.5"
       ],
       "IndexFront": [
         "6.5_1.5_-6.5"
@@ -81532,14 +81505,14 @@
       "IndexBottom": [
         "4.5_1.5_-6.5"
       ],
-      "Index": "5.5_1.5_-6.5",
-      "PathPrefab": null,
-      "TerritoryInfo": 2,
+      "Index": "5.5_1_-6.5",
+      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
+      "TerritoryInfo": 3,
       "ShelterType": {
-        "Left": 0,
-        "Right": 0,
-        "Bottom": 0,
-        "Front": 0
+        "Left": 2,
+        "Right": 2,
+        "Bottom": 2,
+        "Front": 2
       }
     },
     "5.5_1.5_-5.5": {
@@ -81554,7 +81527,7 @@
       "ZRotation": 0.0,
       "WRotation": 1.0,
       "IndexLeft": [
-        "5.5_1.5_-6.5"
+        "5.5_1_-6.5"
       ],
       "IndexRight": [
         "5.5_1.5_-4.5"
@@ -82292,7 +82265,7 @@
       ],
       "IndexUp": [],
       "IndexDown": [
-        "5.5_1.5_-6.5"
+        "5.5_1_-6.5"
       ],
       "IndexFront": [
         "6.5_2.5_-6.5"
@@ -83042,7 +83015,7 @@
         "7.5_0.5_-6.5"
       ],
       "IndexBottom": [
-        "5.5_0.5_-6.5"
+        "5.5_0_-6.5"
       ],
       "Index": "6.5_0.5_-6.5",
       "PathPrefab": null,
@@ -83818,7 +83791,7 @@
         "7.5_1.5_-6.5"
       ],
       "IndexBottom": [
-        "5.5_1.5_-6.5"
+        "5.5_1_-6.5"
       ],
       "Index": "6.5_1.5_-6.5",
       "PathPrefab": null,
@@ -91930,33 +91903,6 @@
         "Right": 0,
         "Bottom": 0,
         "Front": 0
-      }
-    },
-    "0_0_0": {
-      "XSize": 50.0,
-      "YSize": 50.0,
-      "ZSize": 50.0,
-      "XPosition": 0.0,
-      "YPosition": 0.0,
-      "ZPosition": 0.0,
-      "XRotation": 0.0,
-      "YRotation": 0.0,
-      "ZRotation": 0.0,
-      "WRotation": 1.0,
-      "IndexLeft": [],
-      "IndexRight": [],
-      "IndexUp": [],
-      "IndexDown": [],
-      "IndexFront": [],
-      "IndexBottom": [],
-      "Index": "0_0_0",
-      "PathPrefab": "Prefabs/Level1/hilichurl-barricade",
-      "TerritoryInfo": 3,
-      "ShelterType": {
-        "Left": 2,
-        "Right": 2,
-        "Bottom": 2,
-        "Front": 2
       }
     }
   }

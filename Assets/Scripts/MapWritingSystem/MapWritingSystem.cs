@@ -1,11 +1,7 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using UnityEngine;
+using System.IO;
 using Newtonsoft.Json;
-
+using UnityEngine;
 
 public class MapWritingSystem : MonoBehaviour
 {
@@ -34,28 +30,19 @@ public class MapWritingSystem : MonoBehaviour
         (float minBorderZ, float maxBorderZ) = MapInfo.Instance.BorderZ;
         (float minBorderY, float maxBorderY) = MapInfo.Instance.BorderY;
 
-        float XScale = 0.5f;
-        float YScale = 0.5f;
-        float ZScale = 0.5f;
-
-        float XRotation = 0.0f;
-        float YRotation = 0.0f;
-        float ZRotation = 0.0f;
-        float WRotation = 1.0f;
-
-        float XStartPosition = minBorderX + 0.5f;
-        float YStartPosition = 0.5f;
-        float ZStartPosition = minBorderZ + 0.5f;
+        float scale = 0.5f;
+        Quaternion rotationQuaternion = Quaternion.identity;
+        Vector3 startPosition = new Vector3(minBorderX + 0.5f, 0.5f, minBorderZ + 0.5f);
 
         GameObject voxel = new GameObject("Voxel");
-        voxel.transform.localScale = new Vector3(XScale, YScale, ZScale);
-        voxel.transform.rotation = new Quaternion(XRotation, YRotation, ZRotation, WRotation);
+        voxel.transform.localScale = new Vector3(scale, scale, scale);
+        voxel.transform.rotation = rotationQuaternion;
 
-        for (float x = XStartPosition; x <= maxBorderX; x += 1.0f)
+        for (float x = startPosition.x; x <= maxBorderX; x += 1.0f)
         {
-            for (float y = YStartPosition; y <= maxBorderY + 1; y += 1.0f)
+            for (float y = startPosition.y; y <= maxBorderY + 1; y += 1.0f)
             {
-                for (float z = ZStartPosition; z <= maxBorderZ; z += 1.0f)
+                for (float z = startPosition.z; z <= maxBorderZ; z += 1.0f)
                 {
                     voxel.transform.position = new Vector3(x, y, z);
                     AddAirTerritory(voxel);
@@ -126,9 +113,9 @@ public class MapWritingSystem : MonoBehaviour
         _matrixMap.height = height;
     }
 
-    public void ChangeItemScale(GameObject gameObject)
+    public void ChangeItemScale(GameObject mapItem)
     {
-        Transform transformObject = gameObject.transform;
+        Transform transformObject = mapItem.transform;
 
         if (!_matrixMap.ContainsVertexByPox(transformObject.position, out var item)) return;
 
@@ -138,10 +125,10 @@ public class MapWritingSystem : MonoBehaviour
         item.ZSize = scale.z;
     }
 
-    public void AddNewItem(GameObject gameObject)
+    public void AddNewItem(GameObject mapItem)
     {
-        Transform transformObject = gameObject.transform;
-        ItemSizeInfo itemSizeInfoObject = gameObject.GetComponent<ItemSizeInfo>();
+        Transform transformObject = mapItem.transform;
+        ItemSizeInfo itemSizeInfoObject = mapItem.GetComponent<ItemSizeInfo>();
 
         (float, float) borderX = (transformObject.position.x - itemSizeInfoObject.sizeX / 2,
             transformObject.position.x + itemSizeInfoObject.sizeX / 2);
@@ -152,117 +139,74 @@ public class MapWritingSystem : MonoBehaviour
         (float, float) borderZ = (transformObject.position.z - itemSizeInfoObject.sizeZ / 2,
             transformObject.position.z + itemSizeInfoObject.sizeZ / 2);
 
-        Debug.Log(FindAllAirItemsInZone(borderX, borderY, borderZ, out _));
         if (FindAllAirItemsInZone(borderX, borderY, borderZ, out List<string> items))
         {
+            TerritoryInfo itemTerritoryInfo = mapItem.GetComponent<TerritoryInfo>();
 
-            if (gameObject.GetComponent<TerritoryInfo>().Type == TerritoryType.Decor)
+            if (itemTerritoryInfo.Type == TerritoryType.Decor)
             {
-                _matrixMap.AddVertex(new TerritroyReaded(transformObject)
-                {
-                    TerritoryInfo = TerritoryType.Air,
-                    ShelterType = new ShelterInfo(),
-                }, _matrixMap.Vertex);
-                var decorItem = _matrixMap.AddVertex(new TerritroyReaded(transformObject)
-                {
-                    TerritoryInfo = TerritoryType.Decor,
-                    PathPrefab = gameObject.GetComponent<TerritoryInfo>().Path
-                }, _matrixMap.Decors);
-                decorItem.SetNewPosition(gameObject.transform);
+                AddDecorItem(transformObject, itemTerritoryInfo);
             }
             else
             {
-                MakeConnections(_matrixMap.MakeFromVector3ToIndex(transformObject.position), items, out HashSet<string> IndexLeft, out HashSet<string> IndexRight,
-                    out HashSet<string> IndexUp, out HashSet<string> IndexDown, out HashSet<string> IndexFront,
-                    out HashSet<string> IndexBottom);
+                MakeConnections(_matrixMap.MakeFromVector3ToIndex(transformObject.position), items,
+                    out HashSet<string> indexLeft, out HashSet<string> indexRight, out HashSet<string> indexUp, 
+                    out HashSet<string> indexDown, out HashSet<string> indexFront, out HashSet<string> indexBottom);
 
                 RemoveAllDictionaryItemsByKey(items);
 
-                TerritroyReaded newItem = _matrixMap.AddVertex(new TerritroyReaded(transformObject)
-                {
-                    TerritoryInfo = gameObject.GetComponent<TerritoryInfo>().Type,
-                    ShelterType = gameObject.GetComponent<TerritoryInfo>().ShelterType,
-                    PathPrefab = gameObject.GetComponent<TerritoryInfo>().Path
-                }, _matrixMap.Vertex);
-                foreach (var i in IndexLeft)
-                {
-                    Debug.Log(i);
-                }
-                HashSet<string>[] connections = VerifyExistenceOfConnection(IndexLeft, IndexRight, IndexUp, IndexDown, IndexFront, IndexBottom);
-                foreach (var i in IndexLeft)
-                {
-                    Debug.Log(i);
-                }
-                newItem.IndexLeft = connections[0];
-                newItem.IndexRight = connections[1];
-                newItem.IndexUp = connections[2];
-                newItem.IndexDown = connections[3];
-                newItem.IndexFront = connections[4];
-                newItem.IndexBottom = connections[5];
+                AddShelterItem(transformObject, itemTerritoryInfo, out TerritroyReaded newItem);
+
+                VerifyExistenceOfConnection(indexLeft, indexRight, indexUp, indexDown, indexFront, indexBottom);
+
+                newItem.IndexLeft = indexLeft;
+                newItem.IndexRight = indexRight;
+                newItem.IndexUp = indexUp;
+                newItem.IndexDown = indexDown;
+                newItem.IndexFront = indexFront;
+                newItem.IndexBottom = indexBottom;
             }
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(mapItem);
         }
     }
 
-    public void AddGround(GameObject gameObject)
+    public void AddGround(GameObject groundObject)
     {
-        Transform transformObject = gameObject.transform;
+        Transform transformObject = groundObject.transform;
         if (!_matrixMap.ContainsVertexByPox(transformObject.position, out _))
         {
-            _matrixMap.AddVertex(new TerritroyReaded(transformObject)
+            TerritoryInfo itemTerritoryInfo = groundObject.GetComponent<TerritoryInfo>();
+            if (itemTerritoryInfo.Type != TerritoryType.Ground)
             {
-                TerritoryInfo = gameObject.GetComponent<TerritoryInfo>().Type,
-                ShelterType = gameObject.GetComponent<TerritoryInfo>().ShelterType,
-                PathPrefab = gameObject.GetComponent<TerritoryInfo>().Path
-            }, _matrixMap.Vertex);
+                Debug.LogError("AddGround is used only for objects with TerritoryType.Ground");
+                return;
+            }
+                
+            AddShelterItem(transformObject, itemTerritoryInfo, out _);
         }
     }
 
-    public HashSet<string>[] VerifyExistenceOfConnection(HashSet<string> IndexLeft, HashSet<string> IndexRight,
-        HashSet<string> IndexUp, HashSet<string> IndexDown, HashSet<string> IndexFront, HashSet<string> IndexBottom)
+    public void VerifyExistenceOfConnection(HashSet<string> indexLeft, HashSet<string> indexRight,
+        HashSet<string> indexUp, HashSet<string> indexDown, HashSet<string> indexFront, HashSet<string> indexBottom)
     {
-        foreach (var leftIndex in IndexLeft)
+        VerifyExistence(indexLeft);
+        VerifyExistence(indexRight);
+        VerifyExistence(indexUp);
+        VerifyExistence(indexDown);
+        VerifyExistence(indexFront);
+        VerifyExistence(indexBottom);
+    }
+    
+    private void VerifyExistence(HashSet<string> indexSet)
+    {
+        foreach (var index in indexSet)
         {
-            if (_matrixMap._vertex.ContainsKey(leftIndex)) continue;
-            IndexLeft.Remove(leftIndex);
+            if (_matrixMap._vertex.ContainsKey(index)) continue;
+            indexSet.Remove(index);
         }
-
-        foreach (var rightIndex in IndexRight)
-        {
-            if (_matrixMap._vertex.ContainsKey(rightIndex)) continue;
-            IndexRight.Remove(rightIndex);
-        }
-
-        foreach (var upIndex in IndexUp)
-        {
-            if (_matrixMap._vertex.ContainsKey(upIndex)) continue;
-            IndexUp.Remove(upIndex);
-        }
-
-        foreach (var downIndex in IndexDown)
-        {
-            if (_matrixMap._vertex.ContainsKey(downIndex)) continue;
-            IndexDown.Remove(downIndex);
-        }
-
-        foreach (var frontIndex in IndexFront)
-        {
-            if (_matrixMap._vertex.ContainsKey(frontIndex)) continue;
-            IndexFront.Remove(frontIndex);
-        }
-
-        foreach (var bottomIndex in IndexBottom)
-        {
-            if (_matrixMap._vertex.ContainsKey(bottomIndex)) continue;
-            IndexBottom.Remove(bottomIndex);
-        }
-
-        HashSet<string>[] resList = new HashSet<string>[] {IndexLeft, IndexRight, IndexUp, IndexDown, IndexFront, IndexBottom};
-        
-        return resList;
     }
 
     public bool FindAllAirItemsInZone((float, float) BorderX, (float, float) BorderY, (float, float) BorderZ,
@@ -305,9 +249,8 @@ public class MapWritingSystem : MonoBehaviour
             foreach (var leftIndex in item.IndexLeft)
             {
                 if (!_matrixMap._vertex[leftIndex].IndexRight.Contains(key)) continue;
-                
+
                 _matrixMap._vertex[leftIndex].IndexRight.Remove(key);
-                
             }
 
             foreach (var rightIndex in item.IndexRight)
@@ -339,13 +282,15 @@ public class MapWritingSystem : MonoBehaviour
                 if (!_matrixMap._vertex[bottomIndex].IndexFront.Contains(key)) continue;
                 _matrixMap._vertex[bottomIndex].IndexFront.Remove(key);
             }
-            
+
             _matrixMap._vertex.Remove(key);
         }
     }
 
-    public void MakeConnections(string itemIndex, List<string> keys, out HashSet<string> IndexLeft, out HashSet<string> IndexRight,
-        out HashSet<string> IndexUp, out HashSet<string> IndexDown, out HashSet<string> IndexFront, out HashSet<string> IndexBottom)
+    public void MakeConnections(string itemIndex, List<string> keys, out HashSet<string> IndexLeft,
+        out HashSet<string> IndexRight,
+        out HashSet<string> IndexUp, out HashSet<string> IndexDown, out HashSet<string> IndexFront,
+        out HashSet<string> IndexBottom)
     {
         IndexLeft = new HashSet<string>();
         IndexRight = new HashSet<string>();
@@ -423,10 +368,35 @@ public class MapWritingSystem : MonoBehaviour
     {
         // _matrixMap.DebugToConsole();
         // Debug.Log(CultureInfo.CurrentCulture.Name);
-        string jsonText = Newtonsoft.Json.JsonConvert.SerializeObject(_matrixMap, Newtonsoft.Json.Formatting.Indented);
+        string jsonText = JsonConvert.SerializeObject(_matrixMap, Formatting.Indented);
         Debug.Log(jsonText);
 
         string filePath = Application.dataPath + "/Resources" + _fileName;
-        System.IO.File.WriteAllText(filePath, jsonText);
+        File.WriteAllText(filePath, jsonText);
+    }
+
+    private void AddDecorItem(Transform transformObject, TerritoryInfo itemTerritoryInfo)
+    {
+        _matrixMap.AddVertex(new TerritroyReaded(transformObject)
+        {
+            TerritoryInfo = TerritoryType.Air,
+            ShelterType = new ShelterInfo(),
+        }, _matrixMap.Vertex);
+        var decorItem = _matrixMap.AddVertex(new TerritroyReaded(transformObject)
+        {
+            TerritoryInfo = TerritoryType.Decor,
+            PathPrefab = itemTerritoryInfo.Path
+        }, _matrixMap.Decors);
+        decorItem.SetNewPosition(transformObject);
+    }
+    
+    private void AddShelterItem(Transform transformObject, TerritoryInfo itemTerritoryInfo, out TerritroyReaded newItem)
+    {
+        newItem = _matrixMap.AddVertex(new TerritroyReaded(transformObject)
+        {
+            TerritoryInfo = itemTerritoryInfo.Type,
+            ShelterType = itemTerritoryInfo.ShelterType,
+            PathPrefab = itemTerritoryInfo.Path
+        }, _matrixMap.Vertex);
     }
 }
