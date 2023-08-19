@@ -66,6 +66,19 @@ public class MapWritingSystem : MonoBehaviour
 
     public void AddAirTerritory(GameObject voxel)
     {
+        Transform transformObject = voxel.transform;
+
+        (float, float) borderX = (transformObject.position.x - 1 / 2,
+            transformObject.position.x + 1 / 2);
+
+        (float, float) borderY = (transformObject.position.y - 0.5f,
+            transformObject.position.y + 1);
+
+        (float, float) borderZ = (transformObject.position.z - 1 / 2,
+            transformObject.position.z + 1 / 2);
+
+        if (!FindAllAirItemsInZone(borderX, borderY, borderZ, out List<string> items)) return;
+
         if (!_matrixMap.ContainsVertexByPox(voxel.transform.position, out TerritroyReaded item))
         {
             item = _matrixMap.AddVertex(new TerritroyReaded(voxel.transform)
@@ -133,13 +146,13 @@ public class MapWritingSystem : MonoBehaviour
         (float, float) borderX = (transformObject.position.x - itemSizeInfoObject.sizeX / 2,
             transformObject.position.x + itemSizeInfoObject.sizeX / 2);
 
-        (float, float) borderY = (transformObject.position.y - itemSizeInfoObject.sizeY / 2,
-            transformObject.position.y + itemSizeInfoObject.sizeY / 2);
+        (float, float) borderY = (transformObject.position.y,
+            transformObject.position.y + itemSizeInfoObject.sizeY);
 
         (float, float) borderZ = (transformObject.position.z - itemSizeInfoObject.sizeZ / 2,
             transformObject.position.z + itemSizeInfoObject.sizeZ / 2);
 
-
+        Debug.Log(FindAllAirItemsInZone(borderX, borderY, borderZ, out _));
         if (FindAllAirItemsInZone(borderX, borderY, borderZ, out List<string> items))
         {
 
@@ -159,7 +172,7 @@ public class MapWritingSystem : MonoBehaviour
             }
             else
             {
-                MakeConnections(items, out HashSet<string> IndexLeft, out HashSet<string> IndexRight,
+                MakeConnections(_matrixMap.MakeFromVector3ToIndex(transformObject.position), items, out HashSet<string> IndexLeft, out HashSet<string> IndexRight,
                     out HashSet<string> IndexUp, out HashSet<string> IndexDown, out HashSet<string> IndexFront,
                     out HashSet<string> IndexBottom);
 
@@ -171,13 +184,21 @@ public class MapWritingSystem : MonoBehaviour
                     ShelterType = gameObject.GetComponent<TerritoryInfo>().ShelterType,
                     PathPrefab = gameObject.GetComponent<TerritoryInfo>().Path
                 }, _matrixMap.Vertex);
-
-                newItem.IndexLeft = IndexLeft;
-                newItem.IndexRight = IndexRight;
-                newItem.IndexUp = IndexUp;
-                newItem.IndexDown = IndexDown;
-                newItem.IndexFront = IndexFront;
-                newItem.IndexBottom = IndexBottom;
+                foreach (var i in IndexLeft)
+                {
+                    Debug.Log(i);
+                }
+                HashSet<string>[] connections = VerifyExistenceOfConnection(IndexLeft, IndexRight, IndexUp, IndexDown, IndexFront, IndexBottom);
+                foreach (var i in IndexLeft)
+                {
+                    Debug.Log(i);
+                }
+                newItem.IndexLeft = connections[0];
+                newItem.IndexRight = connections[1];
+                newItem.IndexUp = connections[2];
+                newItem.IndexDown = connections[3];
+                newItem.IndexFront = connections[4];
+                newItem.IndexBottom = connections[5];
             }
         }
         else
@@ -200,6 +221,50 @@ public class MapWritingSystem : MonoBehaviour
         }
     }
 
+    public HashSet<string>[] VerifyExistenceOfConnection(HashSet<string> IndexLeft, HashSet<string> IndexRight,
+        HashSet<string> IndexUp, HashSet<string> IndexDown, HashSet<string> IndexFront, HashSet<string> IndexBottom)
+    {
+        foreach (var leftIndex in IndexLeft)
+        {
+            if (_matrixMap._vertex.ContainsKey(leftIndex)) continue;
+            IndexLeft.Remove(leftIndex);
+        }
+
+        foreach (var rightIndex in IndexRight)
+        {
+            if (_matrixMap._vertex.ContainsKey(rightIndex)) continue;
+            IndexRight.Remove(rightIndex);
+        }
+
+        foreach (var upIndex in IndexUp)
+        {
+            if (_matrixMap._vertex.ContainsKey(upIndex)) continue;
+            IndexUp.Remove(upIndex);
+        }
+
+        foreach (var downIndex in IndexDown)
+        {
+            if (_matrixMap._vertex.ContainsKey(downIndex)) continue;
+            IndexDown.Remove(downIndex);
+        }
+
+        foreach (var frontIndex in IndexFront)
+        {
+            if (_matrixMap._vertex.ContainsKey(frontIndex)) continue;
+            IndexFront.Remove(frontIndex);
+        }
+
+        foreach (var bottomIndex in IndexBottom)
+        {
+            if (_matrixMap._vertex.ContainsKey(bottomIndex)) continue;
+            IndexBottom.Remove(bottomIndex);
+        }
+
+        HashSet<string>[] resList = new HashSet<string>[] {IndexLeft, IndexRight, IndexUp, IndexDown, IndexFront, IndexBottom};
+        
+        return resList;
+    }
+
     public bool FindAllAirItemsInZone((float, float) BorderX, (float, float) BorderY, (float, float) BorderZ,
         out List<string> items)
     {
@@ -214,7 +279,7 @@ public class MapWritingSystem : MonoBehaviour
         items = new List<string>();
         for (float x = XStartPosition; x <= maxBorderX; x += .5f)
         {
-            for (float y = YStartPosition; y <= maxBorderY + 1; y += .5f)
+            for (float y = YStartPosition; y <= maxBorderY - 0.1f; y += .5f)
             {
                 for (float z = ZStartPosition; z <= maxBorderZ; z += .5f)
                 {
@@ -236,12 +301,50 @@ public class MapWritingSystem : MonoBehaviour
     {
         foreach (var key in keys)
         {
-            Debug.Log(key);
+            TerritroyReaded item = _matrixMap._vertex[key];
+            foreach (var leftIndex in item.IndexLeft)
+            {
+                if (!_matrixMap._vertex[leftIndex].IndexRight.Contains(key)) continue;
+                
+                _matrixMap._vertex[leftIndex].IndexRight.Remove(key);
+                
+            }
+
+            foreach (var rightIndex in item.IndexRight)
+            {
+                if (!_matrixMap._vertex[rightIndex].IndexLeft.Contains(key)) continue;
+                _matrixMap._vertex[rightIndex].IndexLeft.Remove(key);
+            }
+
+            foreach (var upIndex in item.IndexUp)
+            {
+                if (!_matrixMap._vertex[upIndex].IndexDown.Contains(key)) continue;
+                _matrixMap._vertex[upIndex].IndexDown.Remove(key);
+            }
+
+            foreach (var downIndex in item.IndexDown)
+            {
+                if (!_matrixMap._vertex[downIndex].IndexUp.Contains(key)) continue;
+                _matrixMap._vertex[downIndex].IndexUp.Remove(key);
+            }
+
+            foreach (var frontIndex in item.IndexFront)
+            {
+                if (!_matrixMap._vertex[frontIndex].IndexBottom.Contains(key)) continue;
+                _matrixMap._vertex[frontIndex].IndexBottom.Remove(key);
+            }
+
+            foreach (var bottomIndex in item.IndexBottom)
+            {
+                if (!_matrixMap._vertex[bottomIndex].IndexFront.Contains(key)) continue;
+                _matrixMap._vertex[bottomIndex].IndexFront.Remove(key);
+            }
+            
             _matrixMap._vertex.Remove(key);
         }
     }
 
-    public void MakeConnections(List<string> keys, out HashSet<string> IndexLeft, out HashSet<string> IndexRight,
+    public void MakeConnections(string itemIndex, List<string> keys, out HashSet<string> IndexLeft, out HashSet<string> IndexRight,
         out HashSet<string> IndexUp, out HashSet<string> IndexDown, out HashSet<string> IndexFront, out HashSet<string> IndexBottom)
     {
         IndexLeft = new HashSet<string>();
@@ -260,6 +363,8 @@ public class MapWritingSystem : MonoBehaviour
                 if (keys.Contains(leftIndex)) continue;
 
                 IndexLeft.Add(leftIndex);
+                _matrixMap._vertex[leftIndex].IndexRight.Remove(leftIndex);
+                _matrixMap._vertex[leftIndex].IndexRight.Add(itemIndex);
             }
 
             foreach (var rightIndex in item.IndexRight)
@@ -268,6 +373,8 @@ public class MapWritingSystem : MonoBehaviour
                 if (keys.Contains(rightIndex)) continue;
 
                 IndexRight.Add(rightIndex);
+                _matrixMap._vertex[rightIndex].IndexLeft.Remove(rightIndex);
+                _matrixMap._vertex[rightIndex].IndexLeft.Add(itemIndex);
             }
 
             foreach (var upIndex in item.IndexUp)
@@ -276,6 +383,8 @@ public class MapWritingSystem : MonoBehaviour
                 if (keys.Contains(upIndex)) continue;
 
                 IndexUp.Add(upIndex);
+                _matrixMap._vertex[upIndex].IndexDown.Remove(upIndex);
+                _matrixMap._vertex[upIndex].IndexDown.Add(itemIndex);
             }
 
             foreach (var downIndex in item.IndexDown)
@@ -284,6 +393,8 @@ public class MapWritingSystem : MonoBehaviour
                 if (keys.Contains(downIndex)) continue;
 
                 IndexDown.Add(downIndex);
+                _matrixMap._vertex[downIndex].IndexUp.Remove(downIndex);
+                _matrixMap._vertex[downIndex].IndexUp.Add(itemIndex);
             }
 
             foreach (var frontIndex in item.IndexFront)
@@ -292,6 +403,8 @@ public class MapWritingSystem : MonoBehaviour
                 if (keys.Contains(frontIndex)) continue;
 
                 IndexFront.Add(frontIndex);
+                _matrixMap._vertex[frontIndex].IndexBottom.Remove(frontIndex);
+                _matrixMap._vertex[frontIndex].IndexBottom.Add(itemIndex);
             }
 
             foreach (var bottomIndex in item.IndexBottom)
@@ -300,6 +413,8 @@ public class MapWritingSystem : MonoBehaviour
                 if (keys.Contains(bottomIndex)) continue;
 
                 IndexBottom.Add(bottomIndex);
+                _matrixMap._vertex[bottomIndex].IndexFront.Remove(bottomIndex);
+                _matrixMap._vertex[bottomIndex].IndexFront.Add(itemIndex);
             }
         }
     }
