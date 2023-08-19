@@ -72,7 +72,7 @@ public class MapInfo : MonoBehaviour
 
     void Start()
     {
-        MapWritingSystem.Instance.AddNewItem(ground);
+        MapWritingSystem.Instance.AddGround(ground);
         OnCreateMapButtonClicked();
     }
 
@@ -87,10 +87,8 @@ public class MapInfo : MonoBehaviour
             _BorderX = (-_mapHorizontalSize / 2, _mapHorizontalSize / 2);
             _BorderY = (0, _mapVerticalSize - 1);
             _BorderZ = (-_mapHorizontalSize / 2, _mapHorizontalSize / 2);
-
-            MapWritingSystem.Instance.SetMapSize((int)_mapHorizontalSize, (int)_mapVerticalSize);
+            
             CreateGround();
-            MapWritingSystem.Instance.CreateAirMatrix();
         }
         else
         {
@@ -110,6 +108,8 @@ public class MapInfo : MonoBehaviour
         Vector3 size = new Vector3(Mathf.Abs(corner1.x - corner2.x), 1, Mathf.Abs(corner1.z - corner2.z));
 
         ground.transform.localScale = size;
+        MapWritingSystem.Instance.SetMapSize((int)_mapHorizontalSize, (int)_mapVerticalSize);
+        MapWritingSystem.Instance.CreateAirMatrix();
 
         _SaveGroundInfo();
     }

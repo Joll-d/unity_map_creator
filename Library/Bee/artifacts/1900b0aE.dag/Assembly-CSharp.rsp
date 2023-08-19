@@ -353,6 +353,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"E:/IDE/Unity Editor/2022.3.7f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"E:/IDE/Unity Editor/2022.3.7f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/ItemSizeInfo.cs"
 "Assets/Scripts/Camera/CameraMovement.cs"
 "Assets/Scripts/Camera/RaycastPlatformDetection.cs"
 "Assets/Scripts/ItemCreator.cs"

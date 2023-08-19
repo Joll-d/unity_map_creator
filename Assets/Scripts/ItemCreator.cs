@@ -125,12 +125,12 @@ public class ItemCreator : MonoBehaviour
             collider.enabled = true;
         }
 
-        _SaveItemIntoGraph();
+        _SaveItemIntoGraph(_item);
         _item = null;
     }
 
-    private void _SaveItemIntoGraph(){
-
+    private void _SaveItemIntoGraph(GameObject item){
+        MapWritingSystem.Instance.AddNewItem(item);
     }
 
     private void _DeleteItemPreview(){

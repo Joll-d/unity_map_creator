@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2288033125236287432}
   - component: {fileID: -4459980420605518443}
   - component: {fileID: -3936128696938286106}
+  - component: {fileID: 8545333903279165981}
   m_Layer: 0
   m_Name: hilichurl-target
   m_TagString: Untagged
@@ -27,13 +28,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342351024816031261}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -3.419, y: -0.0131813595, z: 5.865}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &4045443339772351234
 MeshFilter:
@@ -99,7 +100,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _pathPrefab: Prefabs/Level1/hilichurl-target
-  _shelterType: 0
+  _shelterInfo:
+    _shelterInfoLeft: 0
+    _shelterInfoRight: 0
+    _shelterInfoBottom: 0
+    _shelterInfoFront: 0
+  _setOnStartToEveryone: 0
 --- !u!65 &-3936128696938286106
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -108,8 +114,34 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342351024816031261}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 0.014566377, y: 0.023402026, z: 0.017671477}
   m_Center: {x: 0.005671333, y: 0.011832827, z: -0.00075630005}
+--- !u!114 &8545333903279165981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342351024816031261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6df0863bb6ff9ae449837e60719e2e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeX: 1
+  sizeY: 1
+  sizeZ: 1
+  offsetX: 0
+  offsetY: 0
+  offsetZ: 0

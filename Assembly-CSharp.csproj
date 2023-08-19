@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\ItemPicker\ItemPicker.cs" />
+     <Compile Include="Assets\ItemSizeInfo.cs" />
      <Compile Include="Assets\Scripts\Structures\MatrixMap.cs" />
      <Compile Include="Assets\Scripts\Camera\RaycastPlatformDetection.cs" />
      <Compile Include="Assets\Scripts\Structures\TerritoryInfo.cs" />

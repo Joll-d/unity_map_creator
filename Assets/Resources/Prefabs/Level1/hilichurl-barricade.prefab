@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 682767413228889141}
   - component: {fileID: -4840215351017620806}
   - component: {fileID: 6011287971116909972}
+  - component: {fileID: 6121852491588814719}
   m_Layer: 0
   m_Name: hilichurl-barricade
   m_TagString: Untagged
@@ -27,13 +28,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331184399237498336}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 2.5, y: 0.02, z: 1.4}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &3358939928894935295
 MeshFilter:
@@ -98,14 +99,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e67815acc2708dd47b2c44741d7a313c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _type: 0
+  _type: 3
   _pathPrefab: Prefabs/Level1/hilichurl-barricade
   _shelterInfo:
     _shelterInfoLeft: 0
     _shelterInfoRight: 0
     _shelterInfoBottom: 0
     _shelterInfoFront: 0
-  _setOnStartToEveryone: 0
+  _setOnStartToEveryone: 2
 --- !u!65 &6011287971116909972
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -114,8 +115,34 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331184399237498336}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 0.021804402, y: 0.023261191, z: 0.021376163}
   m_Center: {x: -0.0017913932, y: 0.011430553, z: 0.000020461082}
+--- !u!114 &6121852491588814719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331184399237498336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6df0863bb6ff9ae449837e60719e2e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeX: 1
+  sizeY: 1
+  sizeZ: 1
+  offsetX: 0
+  offsetY: 0
+  offsetZ: 0
